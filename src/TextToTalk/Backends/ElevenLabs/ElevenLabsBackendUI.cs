@@ -1,15 +1,11 @@
 ﻿using Dalamud.Bindings.ImGui;
 using Dalamud.Game;
 using Dalamud.Game.Text;
-using NAudio.SoundFont;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
 using TextToTalk.UI;
 using TextToTalk.UI.Windows;
-using static FFXIVClientStructs.FFXIV.Client.UI.Agent.AgentHousingPlant;
-using static TextToTalk.Backends.Azure.AzureClient;
 
 namespace TextToTalk.Backends.ElevenLabs;
 
@@ -79,7 +75,7 @@ public class ElevenLabsBackendUI
         if (presets.Any() && currentVoicePreset != null)
         {
             var presetIndex = presets.IndexOf(currentVoicePreset);
-            if (ImGui.Combo($"Preset##{MemoizedId.Create()}", ref presetIndex, presets.Select(p => p.Name).ToArray(),
+            if (ImGui.Combo($"Preset##{MemoizedId.Create()}", ref presetIndex, presets.Select(p => p.Name ?? "").ToArray(),
                     presets.Count))
             {
                 this.model.SetCurrentVoicePreset(presets[presetIndex].Id);
@@ -108,7 +104,7 @@ public class ElevenLabsBackendUI
             TTSBackend.AmazonPolly,
             this.config);
 
-        var presetName = currentVoicePreset.Name;
+        var presetName = currentVoicePreset.Name ?? "";
         if (ImGui.InputText($"Preset name##{MemoizedId.Create()}", ref presetName, 64))
         {
             currentVoicePreset.Name = presetName;
@@ -148,74 +144,68 @@ public class ElevenLabsBackendUI
             var modelDescriptions = this.model.Models;
             var modelIdList = modelDescriptions.Keys.ToList();
             var modelDescriptionsList = modelDescriptions.Values.Select(v => v.Items.First()).ToList();
-            var selectedItemIndex = modelIdList.IndexOf(currentVoicePreset.ModelId);
+            var selectedModelIndex = modelIdList.IndexOf(currentVoicePreset.ModelId ?? "");
 
-            string modelPreviewName = "";
-            if (selectedItemIndex != -1)
+            string modelPreview;
+            if (modelIdList.Count == 0)
             {
-                var selectedItem = modelDescriptionsList[selectedItemIndex];
-                modelPreviewName = $"{selectedItem.ModelId} || Cost Multiplier: {selectedItem.ModelRates["character_cost_multiplier"]}";
-                if (currentVoicePreset.ModelId == "eleven_v3")
+                modelPreview = "Log in to load available models";
+            }
+            else if (selectedModelIndex == -1)
+            {
+                modelPreview = string.IsNullOrEmpty(currentVoicePreset.ModelId)
+                    ? "Select a model..."
+                    : $"Select a model... (current: {currentVoicePreset.ModelId})";
+            }
+            else
+            {
+                var selectedItem = modelDescriptionsList[selectedModelIndex];
+                modelPreview = $"{selectedItem.ModelId} || Cost Multiplier: {GetCostMultiplier(selectedItem)}";
+                if (selectedItem.ModelId == "eleven_v3")
                 {
-                    modelPreviewName += " [Styles Available]";
+                    modelPreview += " [Styles Available]";
                 }
+            }
 
-                bool previewHasStyles = modelIdList[selectedItemIndex] == "eleven_v3";
-                string previewName = voiceIndex >= 0 ? $"{modelIdList[selectedItemIndex]} || Cost Multiplier: {modelDescriptionsList[selectedItemIndex].ModelRates["character_cost_multiplier"]}" : "Select a model...";
-
-                if (ImGui.BeginCombo($"Models##{MemoizedId.Create()}", "", ImGuiComboFlags.HeightLarge))
+            if (ImGui.BeginCombo($"Model##{MemoizedId.Create()}", modelPreview, ImGuiComboFlags.HeightLarge))
+            {
+                for (int i = 0; i < modelDescriptionsList.Count; i++)
                 {
-                    for (int i = 0; i < modelDescriptionsList.Count; i++)
+                    var item = modelDescriptionsList[i];
+                    bool isSelected = (selectedModelIndex == i);
+
+                    ImGui.Selectable(item.ModelDescription, false, ImGuiSelectableFlags.Disabled);
+
+                    string baseText = $"  {item.ModelId} || Cost Multiplier: {GetCostMultiplier(item)}";
+                    if (ImGui.Selectable($"{baseText}##{i}", isSelected))
                     {
-                        var item = modelDescriptionsList[i];
-                        bool isSelected = (selectedItemIndex == i);
-
-                        ImGui.Selectable(item.ModelDescription, false, ImGuiSelectableFlags.Disabled);
-
-                        string baseText = $"  {item.ModelId} || Cost Multiplier: {item.ModelRates["character_cost_multiplier"]}";
-
-                        // 3. Use a Group to keep the Selectable and the extra text on the same line behaviorally
-                        if (ImGui.Selectable($"{baseText}##{i}", isSelected))
-                        {
-                            currentVoicePreset.ModelId = item.ModelId;
-                            currentVoicePreset.Stability = (float)Math.Round(currentVoicePreset.Stability / 0.5f) * 0.5f;
-                            this.config.Save();
-                        }
-
-                        // 4. Overlay the Yellow Text if applicable
+                        currentVoicePreset.ModelId = item.ModelId;
+                        // eleven_v3 only accepts stability 0.0/0.5/1.0; snap on entry to keep API requests valid.
                         if (item.ModelId == "eleven_v3")
                         {
-                            ImGui.SameLine();
-                            ImGui.PushStyleColor(ImGuiCol.Text, new Vector4(1.0f, 1.0f, 0.6f, 1.0f));
-                            ImGui.Text(" [Styles Available]");
-                            ImGui.PopStyleColor();
+                            currentVoicePreset.Stability =
+                                (float)Math.Round(currentVoicePreset.Stability / 0.5f) * 0.5f;
                         }
 
-                        if (isSelected) ImGui.SetItemDefaultFocus();
+                        this.config.Save();
                     }
-                    ImGui.EndCombo();
-                }
-                ImGui.SameLine();
-                float comboRectMinX = ImGui.GetItemRectMin().X;
-                float comboRectMinY = ImGui.GetItemRectMin().Y;
-                float stylePadding = ImGui.GetStyle().FramePadding.X;
 
-                // Move cursor to inside the combo box frame
-                ImGui.SetCursorScreenPos(new Vector2(comboRectMinX + stylePadding, comboRectMinY + ImGui.GetStyle().FramePadding.Y - 3.0f));
+                    if (item.ModelId == "eleven_v3")
+                    {
+                        ImGui.SameLine();
+                        ImGui.PushStyleColor(ImGuiCol.Text, new Vector4(1.0f, 1.0f, 0.6f, 1.0f));
+                        ImGui.Text(" [Styles Available]");
+                        ImGui.PopStyleColor();
+                    }
 
-                // Draw the Name
-                ImGui.Text(previewName);
-                
-                // Draw the Tag if applicable
-                if (previewHasStyles)
-                {
-                    ImGui.SameLine();
-                    ImGui.TextColored(new Vector4(1.0f, 1.0f, 0.6f, 1.0f), "[Styles Available]");
+                    if (isSelected) ImGui.SetItemDefaultFocus();
                 }
+
+                ImGui.EndCombo();
             }
         }
 
-            var similarityBoost = currentVoicePreset.SimilarityBoost;
+        var similarityBoost = currentVoicePreset.SimilarityBoost;
         if (ImGui.SliderFloat($"Clarity/Similarity boost##{MemoizedId.Create()}", ref similarityBoost, 0, 1,
                 "%.2f", ImGuiSliderFlags.AlwaysClamp))
         {
@@ -256,7 +246,7 @@ public class ElevenLabsBackendUI
         if (currentVoicePreset.ModelId == "eleven_v3")
         {
             var voiceStyles = config.CustomVoiceStyles.ToList();
-            if (voiceStyles == null || voiceStyles.Count == 0)
+            if (voiceStyles.Count == 0)
             {
                 ImGui.BeginDisabled();
                 if (ImGui.BeginCombo("Style", "No styles have been configured"))
@@ -267,7 +257,6 @@ public class ElevenLabsBackendUI
             }
             else
             {
-                var style = currentVoicePreset.Style;
                 voiceStyles.Insert(0, "");
                 var styleIndex = voiceStyles.IndexOf(currentVoicePreset.Style ?? "");
                 if (ImGui.Combo($"Voice Style##{MemoizedId.Create()}", ref styleIndex, voiceStyles, voiceStyles.Count))
@@ -289,8 +278,7 @@ public class ElevenLabsBackendUI
         }
         if (ImGui.Button($"Test##{MemoizedId.Create()}"))
         {
-            var voice = currentVoicePreset;
-            if (voice is not null)
+            if (currentVoicePreset is not null)
             {
                 var request = new SayRequest
                 {
@@ -332,5 +320,16 @@ public class ElevenLabsBackendUI
         }
 
 
+    }
+
+    private static string GetCostMultiplier(ElevenLabsModel model)
+    {
+        if (model.ModelRates != null &&
+            model.ModelRates.TryGetValue("character_cost_multiplier", out var multiplier))
+        {
+            return multiplier.ToString("0.##");
+        }
+
+        return "?";
     }
 }

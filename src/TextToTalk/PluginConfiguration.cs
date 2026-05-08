@@ -114,8 +114,6 @@ namespace TextToTalk
 
         public List<string> CustomVoiceStyles { get; set; }
 
-        public int ElevenLabsModelIndex { get; set; }
-
         public int SelectedAudioDeviceIndex { get; set; }
 
         public Guid SelectedAudioDeviceGuid => AudioDevices.DeviceList.ElementAt(SelectedAudioDeviceIndex).Guid;
