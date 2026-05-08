@@ -163,6 +163,22 @@ namespace TextToTalk.UI
             {
                 Components.ChooseOutputAudioDevice($"Audio Output Device##{MemoizedId.Create()}", this.config);
 
+                ImGui.Spacing();
+
+                // Global volume is stored as a linear multiplier (0.0 - 2.0), but rendered
+                // as a percentage (0% - 200%) so it reads more naturally to users.
+                var volumePercent = this.config.GlobalVolume * 100f;
+                if (ImGui.SliderFloat($"Volume##{MemoizedId.Create()}", ref volumePercent, 0f, 200f, "%.0f%%"))
+                {
+                    this.config.GlobalVolume = volumePercent / 100f;
+                    this.config.Save();
+                }
+
+                Components.HelpTooltip(
+                    "Adjusts the volume of all TTS playback. This is multiplied with the voice preset volume.");
+
+                ImGui.Spacing();
+
                 ConfigComponents.ToggleReadFromQuestTalkAddon(
                     "Read NPC dialogue from the dialogue window",
                     this.config);

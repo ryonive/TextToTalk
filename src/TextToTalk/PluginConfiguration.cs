@@ -116,6 +116,14 @@ namespace TextToTalk
 
         public int SelectedAudioDeviceIndex { get; set; }
 
+        /// <summary>
+        /// A global multiplier applied to the per-voice-preset volume of every backend.
+        /// Stored as a linear multiplier; <c>1.0</c> means no change, <c>0.0</c> mutes,
+        /// and <c>2.0</c> doubles the amplitude. Surfaced in the UI as a percentage from
+        /// 0% to 200%.
+        /// </summary>
+        public float GlobalVolume { get; set; } = 1.0f;
+
         public Guid SelectedAudioDeviceGuid => AudioDevices.DeviceList.ElementAt(SelectedAudioDeviceIndex).Guid;
 
         public int Version { get; set; }

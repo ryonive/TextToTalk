@@ -24,9 +24,13 @@ namespace TextToTalk.Backends
                 _ => throw new NotSupportedException(),
             };
 
-            // Adjust the volume of the audio data
+            // Adjust the volume of the audio data. The per-item volume comes from the
+            // backend's voice preset (or 1.0 for the System backend, which applies its
+            // preset volume natively via SAPI before reaching this point); the global
+            // multiplier is applied uniformly here so every backend honors it consistently.
             var sampleProvider = reader.ToSampleProvider();
-            var volumeSampleProvider = new VolumeSampleProvider(sampleProvider) { Volume = nextItem.Volume };
+            var effectiveVolume = nextItem.Volume * config.GlobalVolume;
+            var volumeSampleProvider = new VolumeSampleProvider(sampleProvider) { Volume = effectiveVolume };
             var playbackDeviceId = config.SelectedAudioDeviceGuid;
 
             // Play the sound
