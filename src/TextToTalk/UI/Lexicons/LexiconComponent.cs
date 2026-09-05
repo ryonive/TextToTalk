@@ -7,6 +7,7 @@ using Dalamud.Interface.ImGuiFileDialog;
 using Dalamud.Bindings.ImGui;
 using TextToTalk.Lexicons;
 using TextToTalk.Lexicons.Updater;
+using TextToTalk.Resources;
 
 namespace TextToTalk.UI.Lexicons;
 
@@ -77,10 +78,10 @@ public class LexiconComponent
             }
         }
 
-        ImGui.Text("Lexicons");
+        ImGui.Text(Strings.Get("LexiconsTitle"));
 
-        ImGui.TextColored(ImColor.HintColor, "Looking for more lexicons? Have a look at our community lexicons list!");
-        if (ImGui.Button("Wiki"))
+        ImGui.TextColored(ImColor.HintColor, Strings.Get("LexiconsCommunityHint"));
+        if (ImGui.Button(Strings.Get("ActionWiki")))
         {
             WebBrowser.Open("https://github.com/karashiiro/TextToTalk/wiki/Community-lexicons");
         }
@@ -116,7 +117,7 @@ public class LexiconComponent
 
         LexiconAddButton();
         ImGui.SameLine();
-        if (ImGui.Button("Open Lexicon Repository"))
+        if (ImGui.Button(Strings.Get("LexiconsOpenRepository")))
         {
             this.lexiconRepoSubwindowVisible = true;
         }
@@ -184,12 +185,12 @@ public class LexiconComponent
 
     private void LexiconAddButton()
     {
-        if (ImGui.Button($"Open Lexicon##{MemoizedId.Create()}"))
+        if (ImGui.Button($"{Strings.Get("LexiconsOpenFile")}##{MemoizedId.Create()}"))
         {
             this.lexiconAddException = null;
             this.lexiconAddSucceeded = false;
 
-            this.fileDialog = new FileDialog("TTTLexiconOpenFileDialog", "Open a file...",
+            this.fileDialog = new FileDialog("TTTLexiconOpenFileDialog", Strings.Get("FileDialogOpenFile"),
                 "Lexicon files{.pls,.xml},PLS files{.pls},XML files{.xml},.*",
                 Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "", "", 1, false,
                 ImGuiFileDialogFlags.None);

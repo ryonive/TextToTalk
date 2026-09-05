@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <!-- Main Window -->
+  <data name="ConfigurationTitle">
+    <value>TextToTalk-konfigurasjon</value>
+  </data>
+  <data name="EnabledSuffix">
+    <value>Aktivert</value>
+  </data>
+  <data name="DisabledSuffix">
+    <value>Deaktivert</value>
+  </data>
+  <!-- Main Tabs -->
+  <data name="TabSynthesizerSettings">
+    <value>Innstillinger for talesyntese</value>
+  </data>
+  <data name="TabPlayerVoices">
+    <value>Spillerstemmer</value>
+  </data>
+  <data name="TabNpcVoices">
+    <value>NPC-stemmer</value>
+  </data>
+  <data name="TabChannelSettings">
+    <value>Kanalinnstillinger</value>
+  </data>
+  <data name="TabTriggersExclusions">
+    <value>Triggere/Unntak</value>
+  </data>
+  <!-- Synthesizer Settings -->
+  <data name="SectionKeybinds">
+    <value>Tastebindinger</value>
+  </data>
+  <data name="EnableKeybind">
+    <value>Aktiver tastebinding</value>
+  </data>
+  <data name="TtsToggleKeybind">
+    <value>Tastebinding for å slå TTS av/på</value>
+  </data>
+  <data name="KeyControl">
+    <value>Ctrl</value>
+  </data>
+  <data name="KeyShift">
+    <value>Shift</value>
+  </data>
+  <data name="KeyAlt">
+    <value>Alt</value>
+  </data>
+  <data name="SectionGeneral">
+    <value>Generelt</value>
+  </data>
+  <data name="AudioOutputDevice">
+    <value>Lydutgangsenhet</value>
+  </data>
+  <data name="Volume">
+    <value>Volum</value>
+  </data>
+  <data name="VolumeHelp">
+    <value>Justerer volumet for all TTS-avspilling. Dette multipliseres med volumet for stemmeforhåndsinnstillingen.</value>
+  </data>
+  <data name="ReadNpcDialogueFromDialogueWindow">
+    <value>Les NPC-dialog fra dialogvinduet</value>
+  </data>
+  <data name="CancelSpeechOnTextAdvance">
+    <value>Avbryt gjeldende NPC-tale når ny tekst er tilgjengelig eller teksten går videre</value>
+  </data>
+  <data name="SkipVoicedNpcDialogue">
+    <value>Hopp over opplesing av stemmesatt NPC-dialog</value>
+  </data>
+  <data name="ReadNpcDialogueFromBattleWindow">
+    <value>Les NPC-dialog fra kampdialogvinduet</value>
+  </data>
+  <data name="SkipMessagesFromYou">
+    <value>Hopp over meldinger fra deg</value>
+  </data>
+  <data name="OnlyMessagesFromYou">
+    <value>Les bare meldinger fra deg</value>
+  </data>
+  <data name="EnableNameWithSay">
+    <value>Si "X sier:" når noen snakker</value>
+  </data>
+  <data name="NameNpcWithSay">
+    <value>Si også "NPC-navn sier:" i NPC-dialog</value>
+  </data>
+  <data name="SayPlayerWorldName">
+    <value>Si navnet på spillerens verden</value>
+  </data>
+  <data name="DisallowMultipleSay">
+    <value>Si bare "Karakternavn sier:" første gang en karakter snakker</value>
+  </data>
+  <data name="SayPartialName">
+    <value>Si bare fornavn eller etternavn</value>
+  </data>
+  <data name="OnlySayForename">
+    <value>Si bare fornavn</value>
+  </data>
+  <data name="OnlySaySurname">
+    <value>Si bare etternavn</value>
+  </data>
+  <data name="LimitPlayerTtsFrequency">
+    <value>Begrens TTS-frekvens for spillere</value>
+  </data>
+  <data name="MessagesPerSecondFormat">
+    <value>%.3f melding(er)/s</value>
+  </data>
+  <data name="SectionVoices">
+    <value>Stemmer</value>
+  </data>
+  <data name="VoiceBackend">
+    <value>Stemmebackend</value>
+  </data>
+  <data name="SectionExperimental">
+    <value>Eksperimentelt</value>
+  </data>
+  <data name="RemoveStutter">
+    <value>Forsøk å fjerne stamming fra NPC-dialog (standard: På)</value>
+  </data>
+  <data name="RemoveStutterHelp">
+    <value>Fjerner "stamming" fra NPC-dialog, for eksempel "H-hei, h-hyggelig å møte deg..."</value>
+  </data>
+  <!-- Player Voices -->
+  <data name="PlayerVoicesHint">
+    <value>Angi bestemte stemmeforhåndsinnstillinger for spillere ved hjelp av alternativene nedenfor.</value>
+  </data>
+  <data name="UsePlayerVoicePresets">
+    <value>Bruk stemmeforhåndsinnstillinger for spillere</value>
+  </data>
+  <data name="TableName">
+    <value>Navn</value>
+  </data>
+  <data name="TableWorld">
+    <value>Verden</value>
+  </data>
+  <data name="TablePreset">
+    <value>Forhåndsinnstilling</value>
+  </data>
+  <data name="ActionDelete">
+    <value>Slett</value>
+  </data>
+  <data name="PlayerName">
+    <value>Spillernavn</value>
+  </data>
+  <data name="PlayerWorld">
+    <value>Spillerens verden</value>
+  </data>
+  <data name="ActionAddPlayer">
+    <value>Legg til spiller</value>
+  </data>
+  <data name="PlayerAddFailedDuplicate">
+    <value>Kunne ikke legge til spilleren – er dette et duplikat?</value>
+  </data>
+  <!-- NPC Voices -->
+  <data name="NpcVoicesHint">
+    <value>Angi bestemte stemmeforhåndsinnstillinger for NPC-er ved hjelp av alternativene nedenfor.</value>
+  </data>
+  <data name="UseNpcVoicePresets">
+    <value>Bruk stemmeforhåndsinnstillinger for NPC-er</value>
+  </data>
+  <data name="NpcName">
+    <value>NPC-navn</value>
+  </data>
+  <data name="ActionAddNpc">
+    <value>Legg til NPC</value>
+  </data>
+  <data name="NpcAddFailedDuplicate">
+    <value>Kunne ikke legge til NPC-en – er dette et duplikat?</value>
+  </data>
+  <!-- Channel Settings -->
+  <data name="ChannelPreset">
+    <value>Forhåndsinnstilling</value>
+  </data>
+  <data name="ActionNewPreset">
+    <value>Ny forhåndsinnstilling</value>
+  </data>
+  <data name="ActionEdit">
+    <value>Rediger</value>
+  </data>
+  <data name="RecommendedForTriggerUse">
+    <value>Anbefalt for bruk med triggere</value>
+  </data>
+  <data name="EnableAllIncludingUndocumented">
+    <value>Aktiver alle (inkludert udokumenterte)</value>
+  </data>
+  <data name="ChatTypeDebug">
+    <value>Feilsøking</value>
+  </data>
+  <data name="ChatTypeCrossParty">
+    <value>Gruppe på tvers av verdener</value>
+  </data>
+  <data name="ChatTypeEnemyDefeatedByYou">
+    <value>Fiende beseiret av deg</value>
+  </data>
+  <data name="ChatTypeOrchestrion">
+    <value>Orchestrion</value>
+  </data>
+  <data name="ChatTypeTellIncoming">
+    <value>Innkommende Tell</value>
+  </data>
+  <data name="ChatTypeTellOutgoing">
+    <value>Utgående Tell</value>
+  </data>
+  <!-- Channel Settings: Chat Type Labels -->
+  <data name="ChatTypeNone">
+    <value>Ingen</value>
+  </data>
+  <data name="ChatTypeSay">
+    <value>Si</value>
+  </data>
+  <data name="ChatTypeShout">
+    <value>Rop</value>
+  </data>
+  <data name="ChatTypeParty">
+    <value>Gruppe</value>
+  </data>
+  <data name="ChatTypeStandardEmote">
+    <value>Standardemoter</value>
+  </data>
+  <data name="ChatTypeCustomEmote">
+    <value>Egendefinerte emoter</value>
+  </data>
+  <data name="ChatTypeFreeCompany">
+    <value>Frikompani</value>
+  </data>
+  <data name="ChatTypeLs1">
+    <value>Linkshell 1</value>
+  </data>
+  <data name="ChatTypeLs2">
+    <value>Linkshell 2</value>
+  </data>
+  <data name="ChatTypeLs3">
+    <value>Linkshell 3</value>
+  </data>
+  <data name="ChatTypeLs4">
+    <value>Linkshell 4</value>
+  </data>
+  <data name="ChatTypeLs5">
+    <value>Linkshell 5</value>
+  </data>
+  <data name="ChatTypeLs6">
+    <value>Linkshell 6</value>
+  </data>
+  <data name="ChatTypeLs7">
+    <value>Linkshell 7</value>
+  </data>
+  <data name="ChatTypeLs8">
+    <value>Linkshell 8</value>
+  </data>
+  <data name="ChatTypeYell">
+    <value>Hyl</value>
+  </data>
+  <data name="ChatTypeAlliance">
+    <value>Allianse</value>
+  </data>
+  <data name="ChatTypeNoviceNetwork">
+    <value>Nybegynnernettverk</value>
+  </data>
+  <data name="ChatTypePvPTeam">
+    <value>PvP-lag</value>
+  </data>
+  <data name="ChatTypeCrossLinkShell1">
+    <value>Tverrverdens-linkshell 1</value>
+  </data>
+  <data name="ChatTypeSystemMessage">
+    <value>Systemmeldinger</value>
+  </data>
+  <data name="ChatTypeGatheringSystemMessage">
+    <value>Systemmeldinger for innsamling</value>
+  </data>
+  <data name="ChatTypeErrorMessage">
+    <value>Feilmeldinger</value>
+  </data>
+  <data name="ChatTypeEcho">
+    <value>Ekko</value>
+  </data>
+  <data name="ChatTypeNPCDialogue">
+    <value>NPC-dialog</value>
+  </data>
+  <data name="ChatTypeLootNotice">
+    <value>Byttebeskjeder</value>
+  </data>
+  <data name="ChatTypeProgress">
+    <value>Fremdrift</value>
+  </data>
+  <data name="ChatTypeLootRoll">
+    <value>Bytterull</value>
+  </data>
+  <data name="ChatTypeCrafting">
+    <value>Tilvirkning</value>
+  </data>
+  <data name="ChatTypeMessageBook">
+    <value>Varsel for meldingsbok</value>
+  </data>
+  <data name="ChatTypeGathering">
+    <value>Innsamling</value>
+  </data>
+  <data name="ChatTypeSystemError">
+    <value>Systemfeil</value>
+  </data>
+  <data name="ChatTypeNPCDialogueAnnouncements">
+    <value>NPC-dialogkunngjøringer</value>
+  </data>
+  <data name="ChatTypeFreeCompanyAnnouncement">
+    <value>Frikompani-kunngjøringer</value>
+  </data>
+  <data name="ChatTypeFreeCompanyLoginLogout">
+    <value>Innloggings- og utloggingsvarsler for frikompani</value>
+  </data>
+  <data name="ChatTypeRetainerSale">
+    <value>Retainersalg</value>
+  </data>
+  <data name="ChatTypePeriodicRecruitmentNotification">
+    <value>Rekrutteringsvarsler</value>
+  </data>
+  <data name="ChatTypeSign">
+    <value>Markører</value>
+  </data>
+  <data name="ChatTypeRandomNumber">
+    <value>Tilfeldig tall</value>
+  </data>
+  <data name="ChatTypeNoviceNetworkSystem">
+    <value>Systemmeldinger for nybegynnernettverket</value>
+  </data>
+  <data name="ChatTypePvpTeamAnnouncement">
+    <value>PvP-lagkunngjøringer</value>
+  </data>
+  <data name="ChatTypePvpTeamLoginLogout">
+    <value>Innloggings- og utloggingsvarsler for PvP-lag</value>
+  </data>
+  <data name="ChatTypeDamage">
+    <value>Skade</value>
+  </data>
+  <data name="ChatTypeMiss">
+    <value>Bom</value>
+  </data>
+  <data name="ChatTypeAction">
+    <value>Handlinger</value>
+  </data>
+  <data name="ChatTypeItem">
+    <value>Gjenstander</value>
+  </data>
+  <data name="ChatTypeHealing">
+    <value>Heling</value>
+  </data>
+  <data name="ChatTypeGainBuff">
+    <value>Positive effekter</value>
+  </data>
+  <data name="ChatTypeGainDebuff">
+    <value>Negative effekter</value>
+  </data>
+  <data name="ChatTypeDamageYouAreDealt">
+    <value>Skade du blir påført</value>
+  </data>
+  <data name="ChatTypeFailedActionUsedOnYou">
+    <value>Mislykkede angrep</value>
+  </data>
+  <data name="ChatTypeActionUsedOnYou">
+    <value>Handlinger brukt på deg</value>
+  </data>
+  <data name="ChatTypeBeneficialEffectOnYou">
+    <value>Positive effekter på deg</value>
+  </data>
+  <data name="ChatTypeLoseBuff">
+    <value>Positive effekter som tar slutt</value>
+  </data>
+  <data name="ChatTypeLoseDebuff">
+    <value>Negative effekter som tar slutt</value>
+  </data>
+  <data name="ChatTypeAlarm">
+    <value>Alarmer</value>
+  </data>
+  <data name="ChatTypeGlamourNotifications">
+    <value>Glamour-varsler</value>
+  </data>
+  <data name="ChatTypeActionUsedByOtherPlayer">
+    <value>Handlinger brukt av andre spillere</value>
+  </data>
+  <data name="ChatTypeBeneficialEffectOnOtherPlayer">
+    <value>Positive effekter på andre spillere</value>
+  </data>
+  <data name="ChatTypeDetrimentalEffectOnOtherPlayer">
+    <value>Negative effekter på andre spillere</value>
+  </data>
+  <data name="ChatTypeBeneficialEffectOnOtherPlayerEnded">
+    <value>Positive effekter på andre spillere som tar slutt</value>
+  </data>
+  <data name="ChatTypeActionReadiedByEngagedEnemy">
+    <value>Handlinger gjort klare av fiende i kamp</value>
+  </data>
+  <data name="ChatTypeDetrimentalEffectOnEnemyEnded">
+    <value>Negative effekter på fienden som tar slutt</value>
+  </data>
+  <data name="ChatTypeCrossLinkShell2">
+    <value>Tverrverdens-linkshell 2</value>
+  </data>
+  <data name="ChatTypeCrossLinkShell3">
+    <value>Tverrverdens-linkshell 3</value>
+  </data>
+  <data name="ChatTypeCrossLinkShell4">
+    <value>Tverrverdens-linkshell 4</value>
+  </data>
+  <data name="ChatTypeCrossLinkShell5">
+    <value>Tverrverdens-linkshell 5</value>
+  </data>
+  <data name="ChatTypeCrossLinkShell6">
+    <value>Tverrverdens-linkshell 6</value>
+  </data>
+  <data name="ChatTypeCrossLinkShell7">
+    <value>Tverrverdens-linkshell 7</value>
+  </data>
+  <data name="ChatTypeCrossLinkShell8">
+    <value>Tverrverdens-linkshell 8</value>
+  </data>
+  <data name="ChatTypeUrgent">
+    <value>Hastemelding</value>
+  </data>
+  <data name="ChatTypeNotice">
+    <value>Merknad</value>
+  </data>
+  <!-- Triggers and Exclusions -->
+  <data name="EnableAllChatTypesIncludingUndocumented">
+    <value>Aktiver alle chattyper (inkludert udokumenterte)</value>
+  </data>
+  <data name="TriggersHeading">
+    <value>Triggere</value>
+  </data>
+  <data name="ExclusionsHeading">
+    <value>Unntak</value>
+  </data>
+  <data name="TriggerInputHintFormat">
+    <value>Skriv inn {0} her...</value>
+  </data>
+  <data name="TriggersRegex">
+    <value>Regex</value>
+  </data>
+  <data name="ActionRemove">
+    <value>Fjern</value>
+  </data>
+  <data name="ActionAddFormat">
+    <value>Legg til {0}</value>
+  </data>
+  <!-- Channel Preset Window -->
+  <data name="ChannelPresetWindowTitle">
+    <value>Forhåndsinnstilling</value>
+  </data>
+  <data name="ChannelPresetName">
+    <value>Navn</value>
+  </data>
+  <data name="ChannelPresetEnableKeybind">
+    <value>Tastebinding for å aktivere forhåndsinnstillingen</value>
+  </data>
+  <data name="ActionClose">
+    <value>Lukk</value>
+  </data>
+  <!-- Voice Unlocker -->
+  <data name="VoiceUnlockerTitle">
+    <value>VoiceUnlocker</value>
+  </data>
+  <data name="VoiceUnlockerManualTutorial">
+    <value>Manuell veiledning</value>
+  </data>
+  <data name="VoiceUnlockerEnableAll">
+    <value>Aktiver alle systemstemmer</value>
+  </data>
+  <data name="VoiceUnlockerWindows10Warning">
+    <value>Denne endringen er bare testet på Windows 10.</value>
+  </data>
+  <data name="VoiceUnlockerManualWarningFormat">
+    <value>Denne funksjonen aktiverer alle TTS-stemmene i systemet ved å kopiere nøkler mellom deler av systemregisteret. Endringen blir kanskje ikke angret automatisk. Hvis du vil utføre endringen manuelt, klikker du på knappen "{0}".</value>
+  </data>
+  <data name="VoiceUnlockerAutomaticWarningFormat">
+    <value>Hvis du vil fortsette med automatisk konfigurasjon, klikker du på knappen "{0}". Systemustabilitet knyttet til registerendringer du har gjort tidligere, tas ikke med i vurderingen, og det gis ikke støtte for slike tilfeller.</value>
+  </data>
+  <data name="VoiceUnlockerSuccess">
+    <value>Registerendringen var vellykket. Endringene tas i bruk når spillet startes på nytt.</value>
+  </data>
+  <data name="VoiceUnlockerStartFailed">
+    <value>VoiceUnlocker kunne ikke starte. Ingen registerendringer ble utført.</value>
+  </data>
+  <data name="VoiceUnlockerAdminRequired">
+    <value>Administratorrettigheter vil bli forespurt</value>
+  </data>
+  <data name="VoiceUnlockerResultTitle">
+    <value>VoiceUnlocker-resultat</value>
+  </data>
+  <!-- Voice Styles -->
+  <data name="VoiceStylesTitle">
+    <value>Stemmestiler</value>
+  </data>
+  <data name="VoiceStylesConfigureAdHocTags">
+    <value>Konfigurer ad hoc-stilmerker</value>
+  </data>
+  <data name="VoiceStylesEnableAdHocTags">
+    <value>Aktiver ad hoc-stilmerker</value>
+  </data>
+  <data name="VoiceStylesAdHocTagsHelp">
+    <value>Hvis dette er valgt, blir chatmeldinger som inneholder et stilmerke, syntetisert med den stilen. Dette overstyrer eventuelle stiler som er konfigurert i stemmeforhåndsinnstillingen.</value>
+  </data>
+  <data name="VoiceStylesDelimiter">
+    <value>Skilletegn for stilmerke</value>
+  </data>
+  <data name="VoiceStylesDelimiterHint">
+    <value>Stilmerke</value>
+  </data>
+  <data name="VoiceStylesExampleFormat">
+    <value>Eksempel: {0}Hviskende{0} Hei verden</value>
+  </data>
+  <data name="VoiceStylesUnsupportedBackend">
+    <value>Denne backenden støtter ikke dynamiske stiler ennå.</value>
+  </data>
+  <!-- Lexicons -->
+  <data name="LexiconsTitle">
+    <value>Leksika</value>
+  </data>
+  <data name="LexiconsCommunityHint">
+    <value>Ser du etter flere leksika? Ta en titt på listen vår over leksika fra fellesskapet!</value>
+  </data>
+  <data name="ActionWiki">
+    <value>Wiki</value>
+  </data>
+  <data name="LexiconsOpenRepository">
+    <value>Åpne leksikonlager</value>
+  </data>
+  <data name="LexiconsOpenFile">
+    <value>Åpne leksikon</value>
+  </data>
+  <data name="FileDialogOpenFile">
+    <value>Åpne en fil...</value>
+  </data>
+  <!-- Lexicon Repository -->
+  <data name="LexiconRepositoryTitle">
+    <value>Leksikonlager</value>
+  </data>
+  <data name="LexiconRepositoryColumnLexicon">
+    <value>Leksikon</value>
+  </data>
+  <data name="LexiconRepositoryColumnStatus">
+    <value>Status</value>
+  </data>
+  <data name="LexiconRepositoryColumnAuthors">
+    <value>Forfattere</value>
+  </data>
+  <data name="LexiconRepositoryStatusHasUpdate">
+    <value>Oppdatering tilgjengelig</value>
+  </data>
+  <data name="LexiconRepositoryStatusInstalled">
+    <value>Installert</value>
+  </data>
+  <data name="LexiconRepositoryPackageByFormat">
+    <value>{0} av {1}</value>
+  </data>
+  <data name="LexiconRepositoryFiles">
+    <value>Filer i leksikonpakken:</value>
+  </data>
+  <data name="LexiconRepositoryFileFormat">
+    <value> - {0}</value>
+  </data>
+  <data name="ActionInstall">
+    <value>Installer</value>
+  </data>
+  <data name="ActionUninstall">
+    <value>Avinstaller</value>
+  </data>
+  <data name="ActionUpdating">
+    <value>Oppdaterer</value>
+  </data>
+  <data name="ActionUpdate">
+    <value>Oppdater</value>
+  </data>
+  <data name="LexiconRepositoryEnabledBackends">
+    <value>Aktivert for backender:</value>
+  </data>
+  <!-- Shared Backend Settings -->
+  <data name="BackendUngenderedPresets">
+    <value>Forhåndsinnstillinger uten kjønn</value>
+  </data>
+  <data name="BackendUngenderedHelp">
+    <value>Som standard har NPC-er i spillet bare kjønn 0 og 1, uavhengig av deres kanoniske kjønn (eller mangel på kjønn). Derfor må karakterer uten kjønn spesifiseres av oss for å bli gjengitt riktig i spillet. Se https://github.com/karashiiro/TextToTalk/wiki/Adding-NPCs-to-the-Ungendered-Overrides-List for mer informasjon.</value>
+  </data>
+  <data name="BackendNoUngenderedPresets">
+    <value>Ingen stemmeforhåndsinnstillinger uten kjønn er valgt.</value>
+  </data>
+  <data name="BackendMalePresets">
+    <value>Mannlige forhåndsinnstillinger</value>
+  </data>
+  <data name="BackendNoMalePresets">
+    <value>Ingen mannlige stemmeforhåndsinnstillinger er valgt.</value>
+  </data>
+  <data name="BackendFemalePresets">
+    <value>Kvinnelige forhåndsinnstillinger</value>
+  </data>
+  <data name="BackendNoFemalePresets">
+    <value>Ingen kvinnelige stemmeforhåndsinnstillinger er valgt.</value>
+  </data>
+  <data name="BackendVoiceUnsupported">
+    <value>Stemmen støttes ikke av denne motoren</value>
+  </data>
+  <data name="BackendNoVoiceSelected">
+    <value>Ingen stemme valgt</value>
+  </data>
+  <data name="BackendMultiplePresetsHint">
+    <value>Hvis flere forhåndsinnstillinger velges per kjønn, blir de tilfeldig tildelt karakterer.</value>
+  </data>
+  <data name="BackendSwitchFailed"><value>Kunne ikke bytte til {0}-backend.</value></data>
+  <data name="BackendNoPresetsConfigured"><value>Du har ingen konfigurerte stemmeforhåndsinnstillinger.</value></data>
+  <data name="BackendCreatePresetHint"><value>Opprett en stemmeforhåndsinnstilling i TextToTalk-konfigurasjonen.</value></data>
+
+  <!-- Megaphone -->
+  <data name="MegaphonePort">
+    <value>Port</value>
+  </data>
+  <data name="MegaphonePortOutOfRange">
+    <value>Porten er utenfor området [0, 65535]</value>
+  </data>
+  <data name="MegaphonePortInvalid">
+    <value>Kan ikke tolke porten.</value>
+  </data>
+  <data name="MegaphoneInstallPrompt">
+    <value>Installer Dalamud-pluginen Megaphone:</value>
+  </data>
+  <data name="MegaphoneOpenInstallGuide">
+    <value>Åpne installasjonsveiledning</value>
+  </data>
+  <data name="MegaphoneServerStatusFormat">
+    <value>{0} på {1}</value>
+  </data>
+  <data name="MegaphoneServerStarted">
+    <value>Startet</value>
+  </data>
+  <data name="MegaphoneServerWillStart">
+    <value>Vil starte</value>
+  </data>
+  <data name="MegaphoneRestartServer">
+    <value>Start serveren på nytt</value>
+  </data>
+  <data name="ChatTypeFreeCompanyMemberLoginNotifications">
+    <value>Innloggingsvarsler for frikompani</value>
+  </data>
+  <data name="ChatTypeDamageDealtByYou">
+    <value>Skade</value>
+  </data>
+  <data name="ChatTypeFailedAttacksOnYou">
+    <value>Bom</value>
+  </data>
+  <data name="ChatTypeActionReadiedByYou">
+    <value>Handlinger</value>
+  </data>
+  <data name="ChatTypeDetrimentalEffectsInflictedByYou">
+    <value>Negative effekter påført av deg</value>
+  </data>
+  <data name="ChatTypeBeneficialEffectOnYouEnded">
+    <value>Positive effekter som tar slutt</value>
+  </data>
+</root>

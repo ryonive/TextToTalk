@@ -22,6 +22,7 @@ using TextToTalk.GameEnums;
 using TextToTalk.Services;
 using static TextToTalk.Backends.Azure.AzureClient;
 using System.Text.RegularExpressions;
+using TextToTalk.Resources;
 
 namespace TextToTalk.UI.Windows
 {
@@ -55,7 +56,7 @@ namespace TextToTalk.UI.Windows
 
 
         public VoiceStyles(VoiceBackendManager backendManager, IConfigUIDelegates helpers, PluginConfiguration config)
-            : base("Voice Styles", ImGuiWindowFlags.None)
+            : base(Strings.Get("VoiceStylesTitle"), ImGuiWindowFlags.None)
 
         {
             Instance = this;
@@ -87,17 +88,15 @@ namespace TextToTalk.UI.Windows
             var component = GetOrCreateComponent(activeBackend, config);
             if (component != null)
             {
-                if (ImGui.CollapsingHeader($"Configure ad-hoc style tags##{MemoizedId.Create()}"))
+                if (ImGui.CollapsingHeader($"{Strings.Get("VoiceStylesConfigureAdHocTags")}##{MemoizedId.Create()}"))
                 {
-                    ConfigComponents.ToggleAdHocStyleTagsEnabled("Enable Ad-hoc Style Tags", this.config);
-                    Components.HelpTooltip("""
-                If checked, chat messages containing a style tag will be synthesized in that style. This overrides any styles configured in the voice preset.
-                """);
+                    ConfigComponents.ToggleAdHocStyleTagsEnabled(Strings.Get("VoiceStylesEnableAdHocTags"), this.config);
+                    Components.HelpTooltip(Strings.Get("VoiceStylesAdHocTagsHelp"));
                     if (config.AdHocStyleTagsEnabled == true)
                     {
-                        ImGui.Text($"Style Tag Delimiter");
+                        ImGui.Text(Strings.Get("VoiceStylesDelimiter"));
                         ImGui.SetNextItemWidth(35.0f);
-                        if (ImGui.InputTextWithHint("##DynamicInput", "Style Tag", ref stylesTag, 30))
+                        if (ImGui.InputTextWithHint("##DynamicInput", Strings.Get("VoiceStylesDelimiterHint"), ref stylesTag, 30))
                         {
                             config.StyleTag = stylesTag;
                             config.StyleRegex = BuildWrappedPattern(stylesTag);
@@ -105,7 +104,7 @@ namespace TextToTalk.UI.Windows
                         }
                         ImGui.SameLine();
 
-                        ImGui.Text($"Example:   {stylesTag}Whispering{stylesTag} Hello World");
+                        ImGui.Text(string.Format(Strings.Get("VoiceStylesExampleFormat"), stylesTag));
                     }
 
                 }
@@ -113,8 +112,13 @@ namespace TextToTalk.UI.Windows
             }
             else
             {
-                ImGui.TextColored(ImGuiColors.DalamudGrey3, "This backend does not yet support dynamic styles.");
+                ImGui.TextColored(ImGuiColors.DalamudGrey3, Strings.Get("VoiceStylesUnsupportedBackend"));
             }
+        }
+
+        public override void PreDraw()
+        {
+            WindowName = Strings.Get("VoiceStylesTitle");
         }
 
         private IVoiceStylesWindow? GetOrCreateComponent(VoiceBackend backend, PluginConfiguration config)

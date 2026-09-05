@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+
+  <!-- Main Window -->
+  <data name="ConfigurationTitle"><value>Configuration de TextToTalk</value></data>
+  <data name="EnabledSuffix"><value>Activé</value></data>
+  <data name="DisabledSuffix"><value>Désactivé</value></data>
+
+  <!-- Main Tabs -->
+  <data name="TabSynthesizerSettings"><value>Paramètres du synthétiseur</value></data>
+  <data name="TabPlayerVoices"><value>Voix des joueurs</value></data>
+  <data name="TabNpcVoices"><value>Voix des PNJ</value></data>
+  <data name="TabChannelSettings"><value>Paramètres des canaux</value></data>
+  <data name="TabTriggersExclusions"><value>Déclencheurs/Exclusions</value></data>
+
+  <!-- Synthesizer Settings -->
+  <data name="SectionKeybinds"><value>Attribution des touches</value></data>
+  <data name="EnableKeybind"><value>Activer le raccourci clavier</value></data>
+  <data name="TtsToggleKeybind"><value>Raccourci d’activation/désactivation du TTS</value></data>
+  <data name="KeyControl"><value>Ctrl</value></data>
+  <data name="KeyShift"><value>Maj</value></data>
+  <data name="KeyAlt"><value>Alt</value></data>
+  <data name="SectionGeneral"><value>Général</value></data>
+  <data name="AudioOutputDevice"><value>Périphérique de sortie audio</value></data>
+  <data name="Volume"><value>Volume</value></data>
+  <data name="VolumeHelp"><value>Règle le volume de toutes les lectures TTS. Ce volume est multiplié par celui du préréglage de voix.</value></data>
+  <data name="ReadNpcDialogueFromDialogueWindow"><value>Lire les dialogues des PNJ depuis la fenêtre de dialogue</value></data>
+  <data name="CancelSpeechOnTextAdvance"><value>Interrompre la lecture du PNJ lorsqu’un nouveau texte est disponible ou lorsque le texte avance</value></data>
+  <data name="SkipVoicedNpcDialogue"><value>Ne pas lire les dialogues de PNJ doublés</value></data>
+  <data name="ReadNpcDialogueFromBattleWindow"><value>Lire les dialogues des PNJ depuis la fenêtre de dialogue de combat</value></data>
+  <data name="SkipMessagesFromYou"><value>Ignorer vos messages</value></data>
+  <data name="OnlyMessagesFromYou"><value>Lire uniquement vos messages</value></data>
+  <data name="EnableNameWithSay"><value>Activer « X dit : » lorsque quelqu’un parle</value></data>
+  <data name="NameNpcWithSay"><value>Prononcer aussi « Nom du PNJ dit : » dans les dialogues de PNJ</value></data>
+  <data name="SayPlayerWorldName"><value>Prononcer le nom du Monde du joueur</value></data>
+  <data name="DisallowMultipleSay"><value>Ne prononcer « Nom du personnage dit : » que la première fois qu’un personnage parle</value></data>
+  <data name="SayPartialName"><value>Prononcer uniquement le prénom ou le nom de famille</value></data>
+  <data name="OnlySayForename"><value>Prononcer uniquement le prénom</value></data>
+  <data name="OnlySaySurname"><value>Prononcer uniquement le nom de famille</value></data>
+  <data name="LimitPlayerTtsFrequency"><value>Limiter la fréquence TTS des joueurs</value></data>
+  <data name="MessagesPerSecondFormat"><value>%.3f message(s)/s</value></data>
+  <data name="SectionVoices"><value>Voix</value></data>
+  <data name="VoiceBackend"><value>Moteur vocal</value></data>
+  <data name="SectionExperimental"><value>Expérimental</value></data>
+  <data name="RemoveStutter"><value>Tenter de supprimer les bégaiements des dialogues de PNJ (par défaut : activé)</value></data>
+  <data name="RemoveStutterHelp"><value>Supprime les « bégaiements » des dialogues de PNJ, par exemple « B-bonjour, r-ravi de vous r-rencontrer... »</value></data>
+
+  <!-- Player Voices -->
+  <data name="PlayerVoicesHint"><value>Définissez des préréglages de voix spécifiques pour les joueurs à l’aide des options ci-dessous.</value></data>
+  <data name="UsePlayerVoicePresets"><value>Utiliser les préréglages de voix des joueurs</value></data>
+  <data name="TableName"><value>Nom</value></data>
+  <data name="TableWorld"><value>Monde</value></data>
+  <data name="TablePreset"><value>Préréglage</value></data>
+  <data name="ActionDelete"><value>Supprimer</value></data>
+  <data name="PlayerName"><value>Nom du joueur</value></data>
+  <data name="PlayerWorld"><value>Monde du joueur</value></data>
+  <data name="ActionAddPlayer"><value>Ajouter un joueur</value></data>
+  <data name="PlayerAddFailedDuplicate"><value>Échec de l’ajout du joueur — s’agit-il d’un doublon ?</value></data>
+
+  <!-- NPC Voices -->
+  <data name="NpcVoicesHint"><value>Définissez des préréglages de voix spécifiques pour les PNJ à l’aide des options ci-dessous.</value></data>
+  <data name="UseNpcVoicePresets"><value>Utiliser les préréglages de voix des PNJ</value></data>
+  <data name="NpcName"><value>Nom du PNJ</value></data>
+  <data name="ActionAddNpc"><value>Ajouter un PNJ</value></data>
+  <data name="NpcAddFailedDuplicate"><value>Échec de l’ajout du PNJ — s’agit-il d’un doublon ?</value></data>
+
+  <!-- Channel Settings -->
+  <data name="ChannelPreset"><value>Préréglage</value></data>
+  <data name="ActionNewPreset"><value>Nouveau préréglage</value></data>
+  <data name="ActionEdit"><value>Modifier</value></data>
+  <data name="RecommendedForTriggerUse"><value>Recommandé pour l’utilisation avec des déclencheurs</value></data>
+  <data name="EnableAllIncludingUndocumented"><value>Tout activer (y compris les éléments non documentés)</value></data>
+  <data name="ChatTypeDebug"><value>Débogage</value></data>
+  <data name="ChatTypeCrossParty"><value>Équipe inter-Monde</value></data>
+  <data name="ChatTypeEnemyDefeatedByYou"><value>Ennemi vaincu par vous</value></data>
+  <data name="ChatTypeOrchestrion"><value>Orchestrion</value></data>
+  <data name="ChatTypeTellIncoming"><value>Murmure reçu</value></data>
+  <data name="ChatTypeTellOutgoing"><value>Murmure envoyé</value></data>
+
+  <!-- Triggers and Exclusions -->
+  <data name="EnableAllChatTypesIncludingUndocumented"><value>Activer tous les types de discussion (y compris les types non documentés)</value></data>
+  <data name="TriggersHeading"><value>Déclencheurs</value></data>
+  <data name="ExclusionsHeading"><value>Exclusions</value></data>
+  <data name="TriggerInputHintFormat"><value>Saisissez {0} ici...</value></data>
+  <data name="TriggersRegex"><value>Regex</value></data>
+  <data name="ActionRemove"><value>Supprimer</value></data>
+  <data name="ActionAddFormat"><value>Ajouter {0}</value></data>
+
+  <!-- Channel Preset Window -->
+  <data name="ChannelPresetWindowTitle"><value>Préréglage</value></data>
+  <data name="ChannelPresetName"><value>Nom</value></data>
+  <data name="ChannelPresetEnableKeybind"><value>Raccourci d’activation du préréglage</value></data>
+  <data name="ActionClose"><value>Fermer</value></data>
+
+  <!-- Voice Unlocker -->
+  <data name="VoiceUnlockerTitle"><value>VoiceUnlocker</value></data>
+  <data name="VoiceUnlockerManualTutorial"><value>Tutoriel de configuration manuelle</value></data>
+  <data name="VoiceUnlockerEnableAll"><value>Activer toutes les voix système</value></data>
+  <data name="VoiceUnlockerWindows10Warning"><value>Cette modification a uniquement été testée sous Windows 10.</value></data>
+  <data name="VoiceUnlockerManualWarningFormat"><value>Cette fonction active toutes les voix TTS du système en copiant des clés entre différentes sections du registre système. Il est possible que cette modification ne puisse pas être annulée automatiquement. Si vous souhaitez effectuer cette modification manuellement, cliquez sur le bouton « {0} ».</value></data>
+  <data name="VoiceUnlockerAutomaticWarningFormat"><value>Si vous souhaitez poursuivre la configuration automatique, cliquez sur le bouton « {0} ». Les instabilités du système liées à des modifications du registre que vous avez effectuées précédemment ne sont pas prises en compte et aucune assistance ne sera fournie dans ces cas.</value></data>
+  <data name="VoiceUnlockerSuccess"><value>La modification du registre a réussi. Les changements seront appliqués après le redémarrage du jeu.</value></data>
+  <data name="VoiceUnlockerStartFailed"><value>VoiceUnlocker n’a pas pu démarrer. Aucune modification du registre n’a été effectuée.</value></data>
+  <data name="VoiceUnlockerAdminRequired"><value>Des privilèges d’administrateur seront demandés</value></data>
+  <data name="VoiceUnlockerResultTitle"><value>Résultat de VoiceUnlocker</value></data>
+
+  <!-- Voice Styles -->
+  <data name="VoiceStylesTitle"><value>Styles de voix</value></data>
+  <data name="VoiceStylesConfigureAdHocTags"><value>Configurer les balises de style ad hoc</value></data>
+  <data name="VoiceStylesEnableAdHocTags"><value>Activer les balises de style ad hoc</value></data>
+  <data name="VoiceStylesAdHocTagsHelp"><value>Si cette option est cochée, les messages de discussion contenant une balise de style seront synthétisés avec ce style. Cela remplace les styles configurés dans le préréglage de voix.</value></data>
+  <data name="VoiceStylesDelimiter"><value>Délimiteur de balise de style</value></data>
+  <data name="VoiceStylesDelimiterHint"><value>Balise de style</value></data>
+  <data name="VoiceStylesExampleFormat"><value>Exemple : {0}Whispering{0} Hello World</value></data>
+  <data name="VoiceStylesUnsupportedBackend"><value>Ce moteur ne prend pas encore en charge les styles dynamiques.</value></data>
+
+  <!-- Lexicons -->
+  <data name="LexiconsTitle"><value>Lexiques</value></data>
+  <data name="LexiconsCommunityHint"><value>Vous cherchez d’autres lexiques ? Consultez notre liste de lexiques communautaires !</value></data>
+  <data name="ActionWiki"><value>Wiki</value></data>
+  <data name="LexiconsOpenRepository"><value>Ouvrir le dépôt de lexiques</value></data>
+  <data name="LexiconsOpenFile"><value>Ouvrir le lexique</value></data>
+  <data name="FileDialogOpenFile"><value>Ouvrir un fichier...</value></data>
+
+  <!-- Lexicon Repository -->
+  <data name="LexiconRepositoryTitle"><value>Dépôt de lexiques</value></data>
+  <data name="LexiconRepositoryColumnLexicon"><value>Lexique</value></data>
+  <data name="LexiconRepositoryColumnStatus"><value>Statut</value></data>
+  <data name="LexiconRepositoryColumnAuthors"><value>Auteurs</value></data>
+  <data name="LexiconRepositoryStatusHasUpdate"><value>Mise à jour disponible</value></data>
+  <data name="LexiconRepositoryStatusInstalled"><value>Installé</value></data>
+  <data name="LexiconRepositoryPackageByFormat"><value>{0} par {1}</value></data>
+  <data name="LexiconRepositoryFiles"><value>Fichiers du paquet de lexiques :</value></data>
+  <data name="LexiconRepositoryFileFormat"><value> - {0}</value></data>
+  <data name="ActionInstall"><value>Installer</value></data>
+  <data name="ActionUninstall"><value>Désinstaller</value></data>
+  <data name="ActionUpdating"><value>Mise à jour en cours</value></data>
+  <data name="ActionUpdate"><value>Mettre à jour</value></data>
+  <data name="LexiconRepositoryEnabledBackends"><value>Activé pour les moteurs :</value></data>
+
+  <!-- Shared Backend Settings -->
+  <data name="BackendUngenderedPresets"><value>Préréglages sans genre</value></data>
+  <data name="BackendUngenderedHelp"><value>Par défaut, les PNJ du jeu n’ont que les valeurs de genre 0 et 1, quel que soit leur genre canonique (ou l’absence de genre). Les personnages sans genre doivent donc être spécifiés par nos soins afin d’être correctement représentés en jeu. Consultez https://github.com/karashiiro/TextToTalk/wiki/Adding-NPCs-to-the-Ungendered-Overrides-List pour plus d’informations.</value></data>
+  <data name="BackendNoUngenderedPresets"><value>Aucun préréglage de voix sans genre n’est sélectionné.</value></data>
+  <data name="BackendMalePresets"><value>Préréglages masculins</value></data>
+  <data name="BackendNoMalePresets"><value>Aucun préréglage de voix masculin n’est sélectionné.</value></data>
+  <data name="BackendFemalePresets"><value>Préréglages féminins</value></data>
+  <data name="BackendNoFemalePresets"><value>Aucun préréglage de voix féminin n’est sélectionné.</value></data>
+  <data name="BackendVoiceUnsupported"><value>Voix non prise en charge par ce moteur</value></data>
+  <data name="BackendNoVoiceSelected"><value>Aucune voix sélectionnée</value></data>
+  <data name="BackendMultiplePresetsHint"><value>Si plusieurs préréglages sont sélectionnés pour un même genre, ils seront attribués aléatoirement aux personnages.</value></data>
+
+  <data name="BackendSwitchFailed"><value>Échec du passage au backend {0}.</value></data>
+  <data name="BackendNoPresetsConfigured"><value>Vous n’avez aucun préréglage vocal configuré.</value></data>
+  <data name="BackendCreatePresetHint"><value>Veuillez créer un préréglage vocal dans la configuration de TextToTalk.</value></data>
+
+  <!-- Megaphone -->
+  <data name="MegaphonePort"><value>Port</value></data>
+  <data name="MegaphonePortOutOfRange"><value>Le port est hors de la plage [0, 65535]</value></data>
+  <data name="MegaphonePortInvalid"><value>Impossible d’analyser le port.</value></data>
+  <data name="MegaphoneInstallPrompt"><value>Installer le plugin Dalamud Megaphone :</value></data>
+  <data name="MegaphoneOpenInstallGuide"><value>Ouvrir le guide d’installation</value></data>
+  <data name="MegaphoneServerStatusFormat"><value>{0} sur {1}</value></data>
+  <data name="MegaphoneServerStarted"><value>Démarré</value></data>
+  <data name="MegaphoneServerWillStart"><value>Démarrera</value></data>
+  <data name="MegaphoneRestartServer"><value>Redémarrer le serveur</value></data>
+</root>

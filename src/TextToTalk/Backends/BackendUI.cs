@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Dalamud.Bindings.ImGui;
 using TextToTalk.UI;
+using TextToTalk.Resources;
 
 namespace TextToTalk.Backends;
 
@@ -15,39 +16,35 @@ public static class BackendUI
         var maleVoices = voiceConfig.GetMalePresets(backend);
         var femaleVoices = voiceConfig.GetFemalePresets(backend);
 
-        if (ImGuiPresetCombo($"Ungendered preset(s)##{MemoizedId.Create(uniq: uniq)}", ungenderedVoices, presets))
+        if (ImGuiPresetCombo($"{Strings.Get("BackendUngenderedPresets")}##{MemoizedId.Create(uniq: uniq)}", ungenderedVoices, presets))
         {
             config.Save();
         }
-        Components.HelpTooltip("""
-            By default, NPCs in the game only have genders of 0 and 1, regardless of their canonical gender (or lack thereof).
-            As such, any ungendered characters need to be specified by us in order to be properly reflected in-game.
-            See https://github.com/karashiiro/TextToTalk/wiki/Adding-NPCs-to-the-Ungendered-Overrides-List for more information.
-            """);
+        Components.HelpTooltip(Strings.Get("BackendUngenderedHelp"));
 
         if (!ungenderedVoices.Any())
         {
-            ImGui.TextColored(ImColor.Red, "No ungendered voice preset(s) are selected.");
+            ImGui.TextColored(ImColor.Red, Strings.Get("BackendNoUngenderedPresets"));
         }
 
-        if (ImGuiPresetCombo($"Male preset(s)##{MemoizedId.Create(uniq: uniq)}", maleVoices, presets))
+        if (ImGuiPresetCombo($"{Strings.Get("BackendMalePresets")}##{MemoizedId.Create(uniq: uniq)}", maleVoices, presets))
         {
             config.Save();
         }
 
         if (!maleVoices.Any())
         {
-            ImGui.TextColored(ImColor.Red, "No male voice preset(s) are selected.");
+            ImGui.TextColored(ImColor.Red, Strings.Get("BackendNoMalePresets"));
         }
 
-        if (ImGuiPresetCombo($"Female preset(s)##{MemoizedId.Create(uniq: uniq)}", femaleVoices, presets))
+        if (ImGuiPresetCombo($"{Strings.Get("BackendFemalePresets")}##{MemoizedId.Create(uniq: uniq)}", femaleVoices, presets))
         {
             config.Save();
         }
 
         if (!femaleVoices.Any())
         {
-            ImGui.TextColored(ImColor.Red, "No female voice preset(s) are selected.");
+            ImGui.TextColored(ImColor.Red, Strings.Get("BackendNoFemalePresets"));
         }
 
         ImGuiMultiVoiceHint();
@@ -97,18 +94,18 @@ public static class BackendUI
 
     public static void ImGuiVoiceNotSupported()
     {
-        ImGui.TextColored(ImColor.Red, "Voice not supported on this engine");
+        ImGui.TextColored(ImColor.Red, Strings.Get("BackendVoiceUnsupported"));
     }
 
     public static void ImGuiVoiceNotSelected()
     {
-        ImGui.TextColored(ImColor.Red, "No voice selected");
+        ImGui.TextColored(ImColor.Red, Strings.Get("BackendNoVoiceSelected"));
     }
 
     public static void ImGuiMultiVoiceHint()
     {
         ImGui.TextColored(ImColor.HintColor,
-            "If multiple presets are selected per gender, they will be randomly assigned to characters.");
+            Strings.Get("BackendMultiplePresetsHint"));
     }
 
     public static bool ImGuiPresetCombo(string label, SortedSet<int> selectedPresets, List<VoicePreset> presets)

@@ -3,14 +3,6 @@
     // These should be added to Dalamud proper
     public enum AdditionalChatType
     {
-        LootMessage = 62,
-        CharacterProgress = 64,
-        Loot = 65,
-        Crafting = 66,
-        Gathering = 67,
-        FCAnnouncement = 69,
-        FCLogin = 70,
-        PartyFinderState = 72,
         ActionUsedOnYou = 2091,
         FailedActionUsedOnYou = 2218,
         ActionReadiedByYou = 2219,

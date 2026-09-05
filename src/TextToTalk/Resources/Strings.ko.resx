@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <!-- Main Window -->
+  <data name="ConfigurationTitle">
+    <value>TextToTalk 설정</value>
+  </data>
+  <data name="EnabledSuffix">
+    <value>활성화</value>
+  </data>
+  <data name="DisabledSuffix">
+    <value>비활성화</value>
+  </data>
+  <!-- Main Tabs -->
+  <data name="TabSynthesizerSettings">
+    <value>음성 합성기 설정</value>
+  </data>
+  <data name="TabPlayerVoices">
+    <value>플레이어 음성</value>
+  </data>
+  <data name="TabNpcVoices">
+    <value>NPC 음성</value>
+  </data>
+  <data name="TabChannelSettings">
+    <value>채널 설정</value>
+  </data>
+  <data name="TabTriggersExclusions">
+    <value>트리거/제외</value>
+  </data>
+  <!-- Synthesizer Settings -->
+  <data name="SectionKeybinds">
+    <value>단축키</value>
+  </data>
+  <data name="EnableKeybind">
+    <value>단축키 활성화</value>
+  </data>
+  <data name="TtsToggleKeybind">
+    <value>TTS 켜기/끄기 단축키</value>
+  </data>
+  <data name="KeyControl">
+    <value>Ctrl</value>
+  </data>
+  <data name="KeyShift">
+    <value>Shift</value>
+  </data>
+  <data name="KeyAlt">
+    <value>Alt</value>
+  </data>
+  <data name="SectionGeneral">
+    <value>일반</value>
+  </data>
+  <data name="AudioOutputDevice">
+    <value>오디오 출력 장치</value>
+  </data>
+  <data name="Volume">
+    <value>볼륨</value>
+  </data>
+  <data name="VolumeHelp">
+    <value>모든 TTS 재생의 볼륨을 조절합니다. 이 값은 음성 프리셋 볼륨과 곱해집니다.</value>
+  </data>
+  <data name="ReadNpcDialogueFromDialogueWindow">
+    <value>대화창에서 NPC 대화 읽기</value>
+  </data>
+  <data name="CancelSpeechOnTextAdvance">
+    <value>새 텍스트가 표시되거나 대사가 넘어가면 현재 NPC 음성 중지</value>
+  </data>
+  <data name="SkipVoicedNpcDialogue">
+    <value>음성이 있는 NPC 대사는 읽지 않기</value>
+  </data>
+  <data name="ReadNpcDialogueFromBattleWindow">
+    <value>전투 대화창에서 NPC 대화 읽기</value>
+  </data>
+  <data name="SkipMessagesFromYou">
+    <value>내 메시지 건너뛰기</value>
+  </data>
+  <data name="OnlyMessagesFromYou">
+    <value>내 메시지만 읽기</value>
+  </data>
+  <data name="EnableNameWithSay">
+    <value>누군가 말할 때 &quot;X 님이 말합니다:&quot; 사용</value>
+  </data>
+  <data name="NameNpcWithSay">
+    <value>NPC 대화에서도 &quot;NPC 이름이 말합니다:&quot; 사용</value>
+  </data>
+  <data name="SayPlayerWorldName">
+    <value>플레이어의 서버 이름 말하기</value>
+  </data>
+  <data name="DisallowMultipleSay">
+    <value>캐릭터가 처음 말할 때만 &quot;캐릭터 이름이 말합니다:&quot; 사용</value>
+  </data>
+  <data name="SayPartialName">
+    <value>이름 또는 성만 말하기</value>
+  </data>
+  <data name="OnlySayForename">
+    <value>이름만 말하기</value>
+  </data>
+  <data name="OnlySaySurname">
+    <value>성만 말하기</value>
+  </data>
+  <data name="LimitPlayerTtsFrequency">
+    <value>플레이어 TTS 빈도 제한</value>
+  </data>
+  <data name="MessagesPerSecondFormat">
+    <value>%.3f개 메시지/초</value>
+  </data>
+  <data name="SectionVoices">
+    <value>음성</value>
+  </data>
+  <data name="VoiceBackend">
+    <value>음성 백엔드</value>
+  </data>
+  <data name="SectionExperimental">
+    <value>실험적 기능</value>
+  </data>
+  <data name="RemoveStutter">
+    <value>NPC 대화의 말더듬 표현 제거 시도 (기본값: 켜짐)</value>
+  </data>
+  <data name="RemoveStutterHelp">
+    <value>NPC 대화에서 &quot;아-안녕하세요, 마-만나서 반갑습니다...&quot; 같은 &quot;말더듬&quot; 표현을 제거합니다.</value>
+  </data>
+  <!-- Player Voices -->
+  <data name="PlayerVoicesHint">
+    <value>아래 옵션을 사용해 플레이어별 음성 프리셋을 설정합니다.</value>
+  </data>
+  <data name="UsePlayerVoicePresets">
+    <value>플레이어 음성 프리셋 사용</value>
+  </data>
+  <data name="TableName">
+    <value>이름</value>
+  </data>
+  <data name="TableWorld">
+    <value>서버</value>
+  </data>
+  <data name="TablePreset">
+    <value>프리셋</value>
+  </data>
+  <data name="ActionDelete">
+    <value>삭제</value>
+  </data>
+  <data name="PlayerName">
+    <value>플레이어 이름</value>
+  </data>
+  <data name="PlayerWorld">
+    <value>플레이어 서버</value>
+  </data>
+  <data name="ActionAddPlayer">
+    <value>플레이어 추가</value>
+  </data>
+  <data name="PlayerAddFailedDuplicate">
+    <value>플레이어를 추가하지 못했습니다. 중복된 항목인가요?</value>
+  </data>
+  <!-- NPC Voices -->
+  <data name="NpcVoicesHint">
+    <value>아래 옵션을 사용해 NPC별 음성 프리셋을 설정합니다.</value>
+  </data>
+  <data name="UseNpcVoicePresets">
+    <value>NPC 음성 프리셋 사용</value>
+  </data>
+  <data name="NpcName">
+    <value>NPC 이름</value>
+  </data>
+  <data name="ActionAddNpc">
+    <value>NPC 추가</value>
+  </data>
+  <data name="NpcAddFailedDuplicate">
+    <value>NPC를 추가하지 못했습니다. 중복된 항목인가요?</value>
+  </data>
+  <!-- Channel Settings -->
+  <data name="ChannelPreset">
+    <value>프리셋</value>
+  </data>
+  <data name="ActionNewPreset">
+    <value>새 프리셋</value>
+  </data>
+  <data name="ActionEdit">
+    <value>편집</value>
+  </data>
+  <data name="RecommendedForTriggerUse">
+    <value>트리거 사용 권장</value>
+  </data>
+  <data name="EnableAllIncludingUndocumented">
+    <value>모두 활성화 (문서화되지 않은 항목 포함)</value>
+  </data>
+  <data name="ChatTypeDebug">
+    <value>디버그</value>
+  </data>
+  <data name="ChatTypeCrossParty">
+    <value>서버 초월 파티</value>
+  </data>
+  <data name="ChatTypeEnemyDefeatedByYou">
+    <value>자신이 처치한 적</value>
+  </data>
+  <data name="ChatTypeOrchestrion">
+    <value>오케스트리온</value>
+  </data>
+  <data name="ChatTypeTellIncoming">
+    <value>받은 귓속말</value>
+  </data>
+  <data name="ChatTypeTellOutgoing">
+    <value>보낸 귓속말</value>
+  </data>
+  <data name="ChatTypeNone">
+    <value>없음</value>
+  </data>
+  <data name="ChatTypeSay">
+    <value>일반</value>
+  </data>
+  <data name="ChatTypeShout">
+    <value>외치기</value>
+  </data>
+  <data name="ChatTypeParty">
+    <value>파티</value>
+  </data>
+  <data name="ChatTypeStandardEmote">
+    <value>감정 표현</value>
+  </data>
+  <data name="ChatTypeCustomEmote">
+    <value>커스텀 감정 표현</value>
+  </data>
+  <data name="ChatTypeFreeCompany">
+    <value>자유부대</value>
+  </data>
+  <data name="ChatTypeLs1">
+    <value>링크셸 1</value>
+  </data>
+  <data name="ChatTypeLs2">
+    <value>링크셸 2</value>
+  </data>
+  <data name="ChatTypeLs3">
+    <value>링크셸 3</value>
+  </data>
+  <data name="ChatTypeLs4">
+    <value>링크셸 4</value>
+  </data>
+  <data name="ChatTypeLs5">
+    <value>링크셸 5</value>
+  </data>
+  <data name="ChatTypeLs6">
+    <value>링크셸 6</value>
+  </data>
+  <data name="ChatTypeLs7">
+    <value>링크셸 7</value>
+  </data>
+  <data name="ChatTypeLs8">
+    <value>링크셸 8</value>
+  </data>
+  <data name="ChatTypeYell">
+    <value>고함</value>
+  </data>
+  <data name="ChatTypeAlliance">
+    <value>연합 파티</value>
+  </data>
+  <data name="ChatTypeNoviceNetwork">
+    <value>초보자 채널</value>
+  </data>
+  <data name="ChatTypePvPTeam">
+    <value>PvP 팀</value>
+  </data>
+  <data name="ChatTypeCrossLinkShell1">
+    <value>크로스월드 링크셸 1</value>
+  </data>
+  <data name="ChatTypeSystemMessage">
+    <value>시스템 메시지</value>
+  </data>
+  <data name="ChatTypeGatheringSystemMessage">
+    <value>채집 시스템 메시지</value>
+  </data>
+  <data name="ChatTypeErrorMessage">
+    <value>오류 메시지</value>
+  </data>
+  <data name="ChatTypeEcho">
+    <value>에코</value>
+  </data>
+  <data name="ChatTypeNPCDialogue">
+    <value>NPC 대화</value>
+  </data>
+  <data name="ChatTypeLootNotice">
+    <value>전리품 알림</value>
+  </data>
+  <data name="ChatTypeProgress">
+    <value>진행 메시지</value>
+  </data>
+  <data name="ChatTypeLootRoll">
+    <value>전리품 주사위</value>
+  </data>
+  <data name="ChatTypeCrafting">
+    <value>제작 메시지</value>
+  </data>
+  <data name="ChatTypeMessageBook">
+    <value>메시지 수첩 알림</value>
+  </data>
+  <data name="ChatTypeGathering">
+    <value>채집 메시지</value>
+  </data>
+  <data name="ChatTypeSystemError">
+    <value>시스템 오류</value>
+  </data>
+  <data name="ChatTypeNPCDialogueAnnouncements">
+    <value>NPC 대화 알림</value>
+  </data>
+  <data name="ChatTypeFreeCompanyAnnouncement">
+    <value>자유부대 알림</value>
+  </data>
+  <data name="ChatTypeFreeCompanyLoginLogout">
+    <value>자유부대 접속 및 로그아웃 알림</value>
+  </data>
+  <data name="ChatTypeRetainerSale">
+    <value>집사 판매</value>
+  </data>
+  <data name="ChatTypePeriodicRecruitmentNotification">
+    <value>정기 모집 알림</value>
+  </data>
+  <data name="ChatTypeSign">
+    <value>징</value>
+  </data>
+  <data name="ChatTypeRandomNumber">
+    <value>랜덤 숫자</value>
+  </data>
+  <data name="ChatTypeNoviceNetworkSystem">
+    <value>초보자 채널 시스템 메시지</value>
+  </data>
+  <data name="ChatTypePvpTeamAnnouncement">
+    <value>PvP 팀 알림</value>
+  </data>
+  <data name="ChatTypePvpTeamLoginLogout">
+    <value>PvP 팀 접속 및 로그아웃 알림</value>
+  </data>
+  <data name="ChatTypeDamage">
+    <value>피해</value>
+  </data>
+  <data name="ChatTypeMiss">
+    <value>ë¹—ë‚˜ê°</value>
+  </data>
+  <data name="ChatTypeAction">
+    <value>행동</value>
+  </data>
+  <data name="ChatTypeItem">
+    <value>아이템</value>
+  </data>
+  <data name="ChatTypeHealing">
+    <value>회복</value>
+  </data>
+  <data name="ChatTypeGainBuff">
+    <value>이로운 효과 획득</value>
+  </data>
+  <data name="ChatTypeGainDebuff">
+    <value>해로운 효과 획득</value>
+  </data>
+  <data name="ChatTypeDamageYouAreDealt">
+    <value>받은 피해</value>
+  </data>
+  <data name="ChatTypeFailedActionUsedOnYou">
+    <value>나를 대상으로 실패한 공격</value>
+  </data>
+  <data name="ChatTypeActionUsedOnYou">
+    <value>나를 대상으로 사용된 행동</value>
+  </data>
+  <data name="ChatTypeBeneficialEffectOnYou">
+    <value>나에게 부여된 이로운 효과</value>
+  </data>
+  <data name="ChatTypeLoseBuff">
+    <value>이로운 효과 종료</value>
+  </data>
+  <data name="ChatTypeLoseDebuff">
+    <value>해로운 효과 종료</value>
+  </data>
+  <data name="ChatTypeAlarm">
+    <value>알람</value>
+  </data>
+  <data name="ChatTypeGlamourNotifications">
+    <value>환상장비 알림</value>
+  </data>
+  <data name="ChatTypeActionUsedByOtherPlayer">
+    <value>다른 플레이어가 사용한 행동</value>
+  </data>
+  <data name="ChatTypeBeneficialEffectOnOtherPlayer">
+    <value>다른 플레이어에게 부여된 이로운 효과</value>
+  </data>
+  <data name="ChatTypeDetrimentalEffectOnOtherPlayer">
+    <value>다른 플레이어에게 부여된 해로운 효과</value>
+  </data>
+  <data name="ChatTypeBeneficialEffectOnOtherPlayerEnded">
+    <value>다른 플레이어의 이로운 효과 종료</value>
+  </data>
+  <data name="ChatTypeActionReadiedByEngagedEnemy">
+    <value>교전 중인 적이 준비한 행동</value>
+  </data>
+  <data name="ChatTypeDetrimentalEffectOnEnemyEnded">
+    <value>적의 해로운 효과 종료</value>
+  </data>
+  <data name="ChatTypeCrossLinkShell2">
+    <value>크로스월드 링크셸 2</value>
+  </data>
+  <data name="ChatTypeCrossLinkShell3">
+    <value>크로스월드 링크셸 3</value>
+  </data>
+  <data name="ChatTypeCrossLinkShell4">
+    <value>크로스월드 링크셸 4</value>
+  </data>
+  <data name="ChatTypeCrossLinkShell5">
+    <value>크로스월드 링크셸 5</value>
+  </data>
+  <data name="ChatTypeCrossLinkShell6">
+    <value>크로스월드 링크셸 6</value>
+  </data>
+  <data name="ChatTypeCrossLinkShell7">
+    <value>크로스월드 링크셸 7</value>
+  </data>
+  <data name="ChatTypeCrossLinkShell8">
+    <value>크로스월드 링크셸 8</value>
+  </data>
+  <data name="ChatTypeUrgent">
+    <value>ê¸´ê¸‰</value>
+  </data>
+  <data name="ChatTypeNotice">
+    <value>알림</value>
+  </data>
+  <!-- Triggers and Exclusions -->
+  <data name="EnableAllChatTypesIncludingUndocumented">
+    <value>모든 채팅 유형 활성화 (문서화되지 않은 유형 포함)</value>
+  </data>
+  <data name="TriggersHeading">
+    <value>트리거</value>
+  </data>
+  <data name="ExclusionsHeading">
+    <value>제외</value>
+  </data>
+  <data name="TriggerInputHintFormat">
+    <value>여기에 {0} 입력...</value>
+  </data>
+  <data name="TriggersRegex">
+    <value>정규식</value>
+  </data>
+  <data name="ActionRemove">
+    <value>제거</value>
+  </data>
+  <data name="ActionAddFormat">
+    <value>{0} 추가</value>
+  </data>
+  <!-- Channel Preset Window -->
+  <data name="ChannelPresetWindowTitle">
+    <value>프리셋</value>
+  </data>
+  <data name="ChannelPresetName">
+    <value>이름</value>
+  </data>
+  <data name="ChannelPresetEnableKeybind">
+    <value>프리셋 활성화 단축키</value>
+  </data>
+  <data name="ActionClose">
+    <value>닫기</value>
+  </data>
+  <!-- Voice Unlocker -->
+  <data name="VoiceUnlockerTitle">
+    <value>VoiceUnlocker</value>
+  </data>
+  <data name="VoiceUnlockerManualTutorial">
+    <value>수동 설정 안내</value>
+  </data>
+  <data name="VoiceUnlockerEnableAll">
+    <value>모든 시스템 음성 활성화</value>
+  </data>
+  <data name="VoiceUnlockerWindows10Warning">
+    <value>이 변경 사항은 Windows 10에서만 테스트되었습니다.</value>
+  </data>
+  <data name="VoiceUnlockerManualWarningFormat">
+    <value>이 기능은 시스템 레지스트리의 섹션 간에 키를 복사하여 모든 시스템 TTS 음성을 활성화합니다. 이 변경 사항은 자동으로 되돌려지지 않을 수 있습니다. 수동으로 변경하려면 &quot;{0}&quot; 버튼을 클릭하세요.</value>
+  </data>
+  <data name="VoiceUnlockerAutomaticWarningFormat">
+    <value>자동 구성을 진행하려면 &quot;{0}&quot; 버튼을 클릭하세요. 이전에 수행한 레지스트리 변경으로 인한 시스템 불안정성은 고려되지 않으며, 해당 경우에는 지원이 제공되지 않습니다.</value>
+  </data>
+  <data name="VoiceUnlockerSuccess">
+    <value>레지스트리 변경에 성공했습니다. 게임을 다시 시작하면 변경 사항이 적용됩니다.</value>
+  </data>
+  <data name="VoiceUnlockerStartFailed">
+    <value>VoiceUnlocker를 시작하지 못했습니다. 레지스트리는 변경되지 않았습니다.</value>
+  </data>
+  <data name="VoiceUnlockerAdminRequired">
+    <value>관리자 권한이 요청됩니다</value>
+  </data>
+  <data name="VoiceUnlockerResultTitle">
+    <value>VoiceUnlocker 결과</value>
+  </data>
+  <!-- Voice Styles -->
+  <data name="VoiceStylesTitle">
+    <value>음성 스타일</value>
+  </data>
+  <data name="VoiceStylesConfigureAdHocTags">
+    <value>임시 스타일 태그 구성</value>
+  </data>
+  <data name="VoiceStylesEnableAdHocTags">
+    <value>임시 스타일 태그 활성화</value>
+  </data>
+  <data name="VoiceStylesAdHocTagsHelp">
+    <value>선택하면 스타일 태그가 포함된 채팅 메시지를 해당 스타일로 합성합니다. 음성 프리셋에 설정된 스타일보다 우선합니다.</value>
+  </data>
+  <data name="VoiceStylesDelimiter">
+    <value>스타일 태그 구분자</value>
+  </data>
+  <data name="VoiceStylesDelimiterHint">
+    <value>스타일 태그</value>
+  </data>
+  <data name="VoiceStylesExampleFormat">
+    <value>예: {0}속삭임{0} 안녕하세요</value>
+  </data>
+  <data name="VoiceStylesUnsupportedBackend">
+    <value>이 백엔드는 아직 동적 스타일을 지원하지 않습니다.</value>
+  </data>
+  <!-- Lexicons -->
+  <data name="LexiconsTitle">
+    <value>발음 사전</value>
+  </data>
+  <data name="LexiconsCommunityHint">
+    <value>더 많은 발음 사전을 찾고 있나요? 커뮤니티 발음 사전 목록을 확인해 보세요!</value>
+  </data>
+  <data name="ActionWiki">
+    <value>위키</value>
+  </data>
+  <data name="LexiconsOpenRepository">
+    <value>발음 사전 저장소 열기</value>
+  </data>
+  <data name="LexiconsOpenFile">
+    <value>발음 사전 열기</value>
+  </data>
+  <data name="FileDialogOpenFile">
+    <value>파일 열기...</value>
+  </data>
+  <!-- Lexicon Repository -->
+  <data name="LexiconRepositoryTitle">
+    <value>발음 사전 저장소</value>
+  </data>
+  <data name="LexiconRepositoryColumnLexicon">
+    <value>발음 사전</value>
+  </data>
+  <data name="LexiconRepositoryColumnStatus">
+    <value>상태</value>
+  </data>
+  <data name="LexiconRepositoryColumnAuthors">
+    <value>작성자</value>
+  </data>
+  <data name="LexiconRepositoryStatusHasUpdate">
+    <value>업데이트 있음</value>
+  </data>
+  <data name="LexiconRepositoryStatusInstalled">
+    <value>설치됨</value>
+  </data>
+  <data name="LexiconRepositoryPackageByFormat">
+    <value>{1}의 {0}</value>
+  </data>
+  <data name="LexiconRepositoryFiles">
+    <value>발음 사전 패키지 파일:</value>
+  </data>
+  <data name="LexiconRepositoryFileFormat">
+    <value> - {0}</value>
+  </data>
+  <data name="ActionInstall">
+    <value>설치</value>
+  </data>
+  <data name="ActionUninstall">
+    <value>제거</value>
+  </data>
+  <data name="ActionUpdating">
+    <value>업데이트 중</value>
+  </data>
+  <data name="ActionUpdate">
+    <value>업데이트</value>
+  </data>
+  <data name="LexiconRepositoryEnabledBackends">
+    <value>활성화된 백엔드:</value>
+  </data>
+  <!-- Shared Backend Settings -->
+  <data name="BackendUngenderedPresets">
+    <value>성별 미지정 프리셋</value>
+  </data>
+  <data name="BackendUngenderedHelp">
+    <value>기본적으로 게임의 NPC는 공식 설정상의 성별(또는 성별이 없음)과 관계없이 성별 값이 0 또는 1뿐입니다. 따라서 성별이 지정되지 않은 캐릭터가 게임 내에서 올바르게 반영되도록 하려면 해당 캐릭터를 별도로 지정해야 합니다. 자세한 내용은 https://github.com/karashiiro/TextToTalk/wiki/Adding-NPCs-to-the-Ungendered-Overrides-List 를 참조하세요.</value>
+  </data>
+  <data name="BackendNoUngenderedPresets">
+    <value>선택된 성별 미지정 음성 프리셋이 없습니다.</value>
+  </data>
+  <data name="BackendMalePresets">
+    <value>남성 프리셋</value>
+  </data>
+  <data name="BackendNoMalePresets">
+    <value>선택된 남성 음성 프리셋이 없습니다.</value>
+  </data>
+  <data name="BackendFemalePresets">
+    <value>여성 프리셋</value>
+  </data>
+  <data name="BackendNoFemalePresets">
+    <value>선택된 여성 음성 프리셋이 없습니다.</value>
+  </data>
+  <data name="BackendVoiceUnsupported">
+    <value>이 엔진에서 지원하지 않는 음성입니다</value>
+  </data>
+  <data name="BackendNoVoiceSelected">
+    <value>선택된 음성이 없습니다</value>
+  </data>
+  <data name="BackendMultiplePresetsHint">
+    <value>성별마다 여러 프리셋을 선택하면 캐릭터에 무작위로 할당됩니다.</value>
+  </data>
+  <data name="BackendSwitchFailed"><value>{0} 백엔드로 전환하지 못했습니다.</value></data>
+  <data name="BackendNoPresetsConfigured"><value>설정된 음성 프리셋이 없습니다.</value></data>
+  <data name="BackendCreatePresetHint"><value>TextToTalk 설정에서 음성 프리셋을 만들어 주세요.</value></data>
+
+  <!-- Megaphone -->
+  <data name="MegaphonePort">
+    <value>포트</value>
+  </data>
+  <data name="MegaphonePortOutOfRange">
+    <value>포트가 범위를 벗어났습니다 [0, 65535]</value>
+  </data>
+  <data name="MegaphonePortInvalid">
+    <value>포트를 해석할 수 없습니다.</value>
+  </data>
+  <data name="MegaphoneInstallPrompt">
+    <value>Megaphone Dalamud 플러그인 설치:</value>
+  </data>
+  <data name="MegaphoneOpenInstallGuide">
+    <value>설치 안내 열기</value>
+  </data>
+  <data name="MegaphoneServerStatusFormat">
+    <value>{1}에서 {0}</value>
+  </data>
+  <data name="MegaphoneServerStarted">
+    <value>시작됨</value>
+  </data>
+  <data name="MegaphoneServerWillStart">
+    <value>시작 예정</value>
+  </data>
+  <data name="MegaphoneRestartServer">
+    <value>서버 다시 시작</value>
+  </data>
+  <data name="ChatTypeFreeCompanyMemberLoginNotifications">
+    <value>자유부대 접속 알림</value>
+  </data>
+  <data name="ChatTypeDamageDealtByYou">
+    <value>피해</value>
+  </data>
+  <data name="ChatTypeFailedAttacksOnYou">
+    <value>ë¹—ë‚˜ê°</value>
+  </data>
+  <data name="ChatTypeActionReadiedByYou">
+    <value>행동</value>
+  </data>
+  <data name="ChatTypeDetrimentalEffectsInflictedByYou">
+    <value>자신이 부여한 해로운 효과</value>
+  </data>
+  <data name="ChatTypeBeneficialEffectOnYouEnded">
+    <value>이로운 효과 종료</value>
+  </data>
+</root>

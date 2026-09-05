@@ -1,4 +1,5 @@
 ﻿using System;
+using TextToTalk.Resources;
 
 namespace TextToTalk
 {
@@ -46,6 +47,14 @@ namespace TextToTalk
             "Y",
             "Z",
         };
+
+        public static string[] DisplayNames =>
+        [
+            Strings.Get("KeyShift"),
+            Strings.Get("KeyControl"),
+            Strings.Get("KeyAlt"),
+            ..Names[3..],
+        ];
 
         public enum Enum : byte
         {

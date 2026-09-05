@@ -16,6 +16,7 @@ using TextToTalk.Backends.System;
 using TextToTalk.Backends.Uberduck;
 using TextToTalk.Backends.Websocket;
 using TextToTalk.Events;
+using TextToTalk.Resources;
 using TextToTalk.Services;
 
 namespace TextToTalk.Backends
@@ -102,7 +103,7 @@ namespace TextToTalk.Backends
                 catch (Exception e)
                 {
                     this.notificationService.NotifyError(
-                        $"Failed to switch to {kind.GetFormattedName()} backend.",
+                        string.Format(Strings.Get("BackendSwitchFailed"), kind.GetFormattedName()),
                         e.Message);
                 }
                 finally
@@ -122,8 +123,8 @@ namespace TextToTalk.Backends
             }
 
             this.notificationService.NotifyWarning(
-                "You have no voice presets configured.",
-                "Please create a voice preset in the TextToTalk configuration.");
+                Strings.Get("BackendNoPresetsConfigured"),
+                Strings.Get("BackendCreatePresetHint"));
         }
 
         public Vector4 GetBackendTitleBarColor()

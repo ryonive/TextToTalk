@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <!-- Main Window -->
+  <data name="ConfigurationTitle">
+    <value>Configurazione di TextToTalk</value>
+  </data>
+  <data name="EnabledSuffix">
+    <value>Abilitato</value>
+  </data>
+  <data name="DisabledSuffix">
+    <value>Disabilitato</value>
+  </data>
+  <!-- Main Tabs -->
+  <data name="TabSynthesizerSettings">
+    <value>Impostazioni sintetizzatore</value>
+  </data>
+  <data name="TabPlayerVoices">
+    <value>Voci dei giocatori</value>
+  </data>
+  <data name="TabNpcVoices">
+    <value>Voci degli NPC</value>
+  </data>
+  <data name="TabChannelSettings">
+    <value>Impostazioni canali</value>
+  </data>
+  <data name="TabTriggersExclusions">
+    <value>Trigger/Esclusioni</value>
+  </data>
+  <!-- Synthesizer Settings -->
+  <data name="SectionKeybinds">
+    <value>Tasti di scelta rapida</value>
+  </data>
+  <data name="EnableKeybind">
+    <value>Abilita tasto di scelta rapida</value>
+  </data>
+  <data name="TtsToggleKeybind">
+    <value>Tasto per attivare/disattivare TTS</value>
+  </data>
+  <data name="KeyControl">
+    <value>Ctrl</value>
+  </data>
+  <data name="KeyShift">
+    <value>Maiusc</value>
+  </data>
+  <data name="KeyAlt">
+    <value>Alt</value>
+  </data>
+  <data name="SectionGeneral">
+    <value>Generale</value>
+  </data>
+  <data name="AudioOutputDevice">
+    <value>Dispositivo di uscita audio</value>
+  </data>
+  <data name="Volume">
+    <value>Volume</value>
+  </data>
+  <data name="VolumeHelp">
+    <value>Regola il volume di tutta la riproduzione TTS. Questo valore viene moltiplicato per il volume del preset vocale.</value>
+  </data>
+  <data name="ReadNpcDialogueFromDialogueWindow">
+    <value>Leggi i dialoghi degli NPC dalla finestra di dialogo</value>
+  </data>
+  <data name="CancelSpeechOnTextAdvance">
+    <value>Interrompi il parlato corrente dell’NPC quando è disponibile nuovo testo o il testo avanza</value>
+  </data>
+  <data name="SkipVoicedNpcDialogue">
+    <value>Non leggere i dialoghi degli NPC doppiati</value>
+  </data>
+  <data name="ReadNpcDialogueFromBattleWindow">
+    <value>Leggi i dialoghi degli NPC dalla finestra dei dialoghi di battaglia</value>
+  </data>
+  <data name="SkipMessagesFromYou">
+    <value>Ignora i tuoi messaggi</value>
+  </data>
+  <data name="OnlyMessagesFromYou">
+    <value>Leggi solo i tuoi messaggi</value>
+  </data>
+  <data name="EnableNameWithSay">
+    <value>Pronuncia "X dice:" quando qualcuno parla</value>
+  </data>
+  <data name="NameNpcWithSay">
+    <value>Pronuncia anche "Nome NPC dice:" nei dialoghi degli NPC</value>
+  </data>
+  <data name="SayPlayerWorldName">
+    <value>Pronuncia il nome del Mondo del giocatore</value>
+  </data>
+  <data name="DisallowMultipleSay">
+    <value>Pronuncia "Nome personaggio dice:" solo la prima volta che un personaggio parla</value>
+  </data>
+  <data name="SayPartialName">
+    <value>Pronuncia solo il nome o il cognome</value>
+  </data>
+  <data name="OnlySayForename">
+    <value>Pronuncia solo il nome</value>
+  </data>
+  <data name="OnlySaySurname">
+    <value>Pronuncia solo il cognome</value>
+  </data>
+  <data name="LimitPlayerTtsFrequency">
+    <value>Limita la frequenza TTS dei giocatori</value>
+  </data>
+  <data name="MessagesPerSecondFormat">
+    <value>%.3f messaggi/s</value>
+  </data>
+  <data name="SectionVoices">
+    <value>Voci</value>
+  </data>
+  <data name="VoiceBackend">
+    <value>Backend vocale</value>
+  </data>
+  <data name="SectionExperimental">
+    <value>Sperimentale</value>
+  </data>
+  <data name="RemoveStutter">
+    <value>Prova a rimuovere il balbettio dai dialoghi degli NPC (predefinito: Attivo)</value>
+  </data>
+  <data name="RemoveStutterHelp">
+    <value>Rimuove il "balbettio" dai dialoghi degli NPC, ad esempio "C-ciao, p-piacere di conoscerti..."</value>
+  </data>
+  <!-- Player Voices -->
+  <data name="PlayerVoicesHint">
+    <value>Imposta preset vocali specifici per i giocatori usando le opzioni qui sotto.</value>
+  </data>
+  <data name="UsePlayerVoicePresets">
+    <value>Usa preset vocali per i giocatori</value>
+  </data>
+  <data name="TableName">
+    <value>Nome</value>
+  </data>
+  <data name="TableWorld">
+    <value>Mondo</value>
+  </data>
+  <data name="TablePreset">
+    <value>Preset</value>
+  </data>
+  <data name="ActionDelete">
+    <value>Elimina</value>
+  </data>
+  <data name="PlayerName">
+    <value>Nome giocatore</value>
+  </data>
+  <data name="PlayerWorld">
+    <value>Mondo del giocatore</value>
+  </data>
+  <data name="ActionAddPlayer">
+    <value>Aggiungi giocatore</value>
+  </data>
+  <data name="PlayerAddFailedDuplicate">
+    <value>Impossibile aggiungere il giocatore: è un duplicato?</value>
+  </data>
+  <!-- NPC Voices -->
+  <data name="NpcVoicesHint">
+    <value>Imposta preset vocali specifici per gli NPC usando le opzioni qui sotto.</value>
+  </data>
+  <data name="UseNpcVoicePresets">
+    <value>Usa preset vocali per gli NPC</value>
+  </data>
+  <data name="NpcName">
+    <value>Nome NPC</value>
+  </data>
+  <data name="ActionAddNpc">
+    <value>Aggiungi NPC</value>
+  </data>
+  <data name="NpcAddFailedDuplicate">
+    <value>Impossibile aggiungere l’NPC: è un duplicato?</value>
+  </data>
+  <!-- Channel Settings -->
+  <data name="ChannelPreset">
+    <value>Preset</value>
+  </data>
+  <data name="ActionNewPreset">
+    <value>Nuovo preset</value>
+  </data>
+  <data name="ActionEdit">
+    <value>Modifica</value>
+  </data>
+  <data name="RecommendedForTriggerUse">
+    <value>Consigliato per l’uso con i trigger</value>
+  </data>
+  <data name="EnableAllIncludingUndocumented">
+    <value>Abilita tutto (inclusi gli elementi non documentati)</value>
+  </data>
+  <data name="ChatTypeDebug">
+    <value>Debug</value>
+  </data>
+  <data name="ChatTypeCrossParty">
+    <value>Gruppo intermondo</value>
+  </data>
+  <data name="ChatTypeEnemyDefeatedByYou">
+    <value>Nemico sconfitto da te</value>
+  </data>
+  <data name="ChatTypeOrchestrion">
+    <value>Orchestrion</value>
+  </data>
+  <data name="ChatTypeTellIncoming">
+    <value>Tell in arrivo</value>
+  </data>
+  <data name="ChatTypeTellOutgoing">
+    <value>Tell in uscita</value>
+  </data>
+  <data name="ChatTypeNone">
+    <value>Nessuno</value>
+  </data>
+  <data name="ChatTypeSay">
+    <value>Dire</value>
+  </data>
+  <data name="ChatTypeShout">
+    <value>Gridare</value>
+  </data>
+  <data name="ChatTypeParty">
+    <value>Gruppo</value>
+  </data>
+  <data name="ChatTypeStandardEmote">
+    <value>Emote standard</value>
+  </data>
+  <data name="ChatTypeCustomEmote">
+    <value>Emote personalizzate</value>
+  </data>
+  <data name="ChatTypeFreeCompany">
+    <value>Compagnia libera</value>
+  </data>
+  <data name="ChatTypeLs1">
+    <value>Linkshell 1</value>
+  </data>
+  <data name="ChatTypeLs2">
+    <value>Linkshell 2</value>
+  </data>
+  <data name="ChatTypeLs3">
+    <value>Linkshell 3</value>
+  </data>
+  <data name="ChatTypeLs4">
+    <value>Linkshell 4</value>
+  </data>
+  <data name="ChatTypeLs5">
+    <value>Linkshell 5</value>
+  </data>
+  <data name="ChatTypeLs6">
+    <value>Linkshell 6</value>
+  </data>
+  <data name="ChatTypeLs7">
+    <value>Linkshell 7</value>
+  </data>
+  <data name="ChatTypeLs8">
+    <value>Linkshell 8</value>
+  </data>
+  <data name="ChatTypeYell">
+    <value>Urlo</value>
+  </data>
+  <data name="ChatTypeAlliance">
+    <value>Alleanza</value>
+  </data>
+  <data name="ChatTypeNoviceNetwork">
+    <value>Rete dei novizi</value>
+  </data>
+  <data name="ChatTypePvPTeam">
+    <value>Squadra PvP</value>
+  </data>
+  <data name="ChatTypeCrossLinkShell1">
+    <value>Linkshell intermondo 1</value>
+  </data>
+  <data name="ChatTypeSystemMessage">
+    <value>Messaggi di sistema</value>
+  </data>
+  <data name="ChatTypeGatheringSystemMessage">
+    <value>Messaggi di raccolta</value>
+  </data>
+  <data name="ChatTypeErrorMessage">
+    <value>Messaggi di errore</value>
+  </data>
+  <data name="ChatTypeEcho">
+    <value>Eco</value>
+  </data>
+  <data name="ChatTypeNPCDialogue">
+    <value>Dialoghi degli NPC</value>
+  </data>
+  <data name="ChatTypeLootNotice">
+    <value>Bottino</value>
+  </data>
+  <data name="ChatTypeProgress">
+    <value>Progressione</value>
+  </data>
+  <data name="ChatTypeLootRoll">
+    <value>Tiri per il bottino</value>
+  </data>
+  <data name="ChatTypeCrafting">
+    <value>Creazione</value>
+  </data>
+  <data name="ChatTypeMessageBook">
+    <value>Avviso del libro dei messaggi</value>
+  </data>
+  <data name="ChatTypeGathering">
+    <value>Raccolta</value>
+  </data>
+  <data name="ChatTypeSystemError">
+    <value>Errori di sistema</value>
+  </data>
+  <data name="ChatTypeNPCDialogueAnnouncements">
+    <value>Annunci dei dialoghi degli NPC</value>
+  </data>
+  <data name="ChatTypeFreeCompanyAnnouncement">
+    <value>Annunci della compagnia libera</value>
+  </data>
+  <data name="ChatTypeFreeCompanyLoginLogout">
+    <value>Accessi e disconnessioni della compagnia libera</value>
+  </data>
+  <data name="ChatTypeRetainerSale">
+    <value>Vendite del servitore</value>
+  </data>
+  <data name="ChatTypePeriodicRecruitmentNotification">
+    <value>Notifiche periodiche di reclutamento</value>
+  </data>
+  <data name="ChatTypeSign">
+    <value>Segnaletica</value>
+  </data>
+  <data name="ChatTypeRandomNumber">
+    <value>Numero casuale</value>
+  </data>
+  <data name="ChatTypeNoviceNetworkSystem">
+    <value>Messaggi di sistema della Rete dei novizi</value>
+  </data>
+  <data name="ChatTypePvpTeamAnnouncement">
+    <value>Annunci della squadra PvP</value>
+  </data>
+  <data name="ChatTypePvpTeamLoginLogout">
+    <value>Accessi e disconnessioni della squadra PvP</value>
+  </data>
+  <data name="ChatTypeDamage">
+    <value>Danni</value>
+  </data>
+  <data name="ChatTypeMiss">
+    <value>Attacchi mancati</value>
+  </data>
+  <data name="ChatTypeAction">
+    <value>Azioni</value>
+  </data>
+  <data name="ChatTypeItem">
+    <value>Oggetti</value>
+  </data>
+  <data name="ChatTypeHealing">
+    <value>Cure</value>
+  </data>
+  <data name="ChatTypeGainBuff">
+    <value>Effetti benefici</value>
+  </data>
+  <data name="ChatTypeGainDebuff">
+    <value>Effetti debilitanti</value>
+  </data>
+  <data name="ChatTypeDamageYouAreDealt">
+    <value>Danni subiti</value>
+  </data>
+  <data name="ChatTypeFailedActionUsedOnYou">
+    <value>Attacchi falliti</value>
+  </data>
+  <data name="ChatTypeActionUsedOnYou">
+    <value>Azioni usate su di te</value>
+  </data>
+  <data name="ChatTypeBeneficialEffectOnYou">
+    <value>Effetti benefici su di te</value>
+  </data>
+  <data name="ChatTypeLoseBuff">
+    <value>Effetti benefici terminati</value>
+  </data>
+  <data name="ChatTypeLoseDebuff">
+    <value>Effetti debilitanti terminati</value>
+  </data>
+  <data name="ChatTypeAlarm">
+    <value>Allarmi</value>
+  </data>
+  <data name="ChatTypeGlamourNotifications">
+    <value>Notifiche delle alterazioni estetiche</value>
+  </data>
+  <data name="ChatTypeActionUsedByOtherPlayer">
+    <value>Azioni usate da altri giocatori</value>
+  </data>
+  <data name="ChatTypeBeneficialEffectOnOtherPlayer">
+    <value>Effetti benefici su altri giocatori</value>
+  </data>
+  <data name="ChatTypeDetrimentalEffectOnOtherPlayer">
+    <value>Effetti debilitanti su altri giocatori</value>
+  </data>
+  <data name="ChatTypeBeneficialEffectOnOtherPlayerEnded">
+    <value>Effetti benefici su altri giocatori terminati</value>
+  </data>
+  <data name="ChatTypeActionReadiedByEngagedEnemy">
+    <value>Azioni preparate dai nemici ingaggiati</value>
+  </data>
+  <data name="ChatTypeDetrimentalEffectOnEnemyEnded">
+    <value>Effetti debilitanti sui nemici terminati</value>
+  </data>
+  <data name="ChatTypeCrossLinkShell2">
+    <value>Linkshell intermondo 2</value>
+  </data>
+  <data name="ChatTypeCrossLinkShell3">
+    <value>Linkshell intermondo 3</value>
+  </data>
+  <data name="ChatTypeCrossLinkShell4">
+    <value>Linkshell intermondo 4</value>
+  </data>
+  <data name="ChatTypeCrossLinkShell5">
+    <value>Linkshell intermondo 5</value>
+  </data>
+  <data name="ChatTypeCrossLinkShell6">
+    <value>Linkshell intermondo 6</value>
+  </data>
+  <data name="ChatTypeCrossLinkShell7">
+    <value>Linkshell intermondo 7</value>
+  </data>
+  <data name="ChatTypeCrossLinkShell8">
+    <value>Linkshell intermondo 8</value>
+  </data>
+  <data name="ChatTypeUrgent">
+    <value>Urgente</value>
+  </data>
+  <data name="ChatTypeNotice">
+    <value>Avviso</value>
+  </data>
+  <!-- Triggers and Exclusions -->
+  <data name="EnableAllChatTypesIncludingUndocumented">
+    <value>Abilita tutti i tipi di chat (inclusi quelli non documentati)</value>
+  </data>
+  <data name="TriggersHeading">
+    <value>Trigger</value>
+  </data>
+  <data name="ExclusionsHeading">
+    <value>Esclusioni</value>
+  </data>
+  <data name="TriggerInputHintFormat">
+    <value>Inserisci {0} qui...</value>
+  </data>
+  <data name="TriggersRegex">
+    <value>Regex</value>
+  </data>
+  <data name="ActionRemove">
+    <value>Rimuovi</value>
+  </data>
+  <data name="ActionAddFormat">
+    <value>Aggiungi {0}</value>
+  </data>
+  <!-- Channel Preset Window -->
+  <data name="ChannelPresetWindowTitle">
+    <value>Preset</value>
+  </data>
+  <data name="ChannelPresetName">
+    <value>Nome</value>
+  </data>
+  <data name="ChannelPresetEnableKeybind">
+    <value>Tasto di scelta rapida per abilitare il preset</value>
+  </data>
+  <data name="ActionClose">
+    <value>Chiudi</value>
+  </data>
+  <!-- Voice Unlocker -->
+  <data name="VoiceUnlockerTitle">
+    <value>VoiceUnlocker</value>
+  </data>
+  <data name="VoiceUnlockerManualTutorial">
+    <value>Guida manuale</value>
+  </data>
+  <data name="VoiceUnlockerEnableAll">
+    <value>Abilita tutte le voci di sistema</value>
+  </data>
+  <data name="VoiceUnlockerWindows10Warning">
+    <value>Questa modifica è stata testata solo su Windows 10.</value>
+  </data>
+  <data name="VoiceUnlockerManualWarningFormat">
+    <value>Questa funzione abiliterà tutte le voci TTS di sistema copiando chiavi tra sezioni del registro di sistema. La modifica potrebbe non essere annullata automaticamente. Se vuoi eseguire la modifica manualmente, fai clic sul pulsante "{0}".</value>
+  </data>
+  <data name="VoiceUnlockerAutomaticWarningFormat">
+    <value>Se vuoi procedere con la configurazione automatica, fai clic sul pulsante "{0}". Eventuali instabilità del sistema legate a modifiche del registro eseguite in precedenza non vengono prese in considerazione e non verrà fornito supporto per tali casi.</value>
+  </data>
+  <data name="VoiceUnlockerSuccess">
+    <value>Modifica del registro riuscita. Le modifiche verranno applicate al riavvio del gioco.</value>
+  </data>
+  <data name="VoiceUnlockerStartFailed">
+    <value>Impossibile avviare VoiceUnlocker. Non è stata apportata alcuna modifica al registro.</value>
+  </data>
+  <data name="VoiceUnlockerAdminRequired">
+    <value>Verranno richiesti privilegi di amministratore</value>
+  </data>
+  <data name="VoiceUnlockerResultTitle">
+    <value>Risultato di VoiceUnlocker</value>
+  </data>
+  <!-- Voice Styles -->
+  <data name="VoiceStylesTitle">
+    <value>Stili vocali</value>
+  </data>
+  <data name="VoiceStylesConfigureAdHocTags">
+    <value>Configura tag di stile ad hoc</value>
+  </data>
+  <data name="VoiceStylesEnableAdHocTags">
+    <value>Abilita tag di stile ad hoc</value>
+  </data>
+  <data name="VoiceStylesAdHocTagsHelp">
+    <value>Se selezionato, i messaggi di chat contenenti un tag di stile verranno sintetizzati con quello stile. Questo sostituisce eventuali stili configurati nel preset vocale.</value>
+  </data>
+  <data name="VoiceStylesDelimiter">
+    <value>Delimitatore del tag di stile</value>
+  </data>
+  <data name="VoiceStylesDelimiterHint">
+    <value>Tag di stile</value>
+  </data>
+  <data name="VoiceStylesExampleFormat">
+    <value>Esempio: {0}Sussurrando{0} Ciao mondo</value>
+  </data>
+  <data name="VoiceStylesUnsupportedBackend">
+    <value>Questo backend non supporta ancora gli stili dinamici.</value>
+  </data>
+  <!-- Lexicons -->
+  <data name="LexiconsTitle">
+    <value>Lessici</value>
+  </data>
+  <data name="LexiconsCommunityHint">
+    <value>Cerchi altri lessici? Dai un’occhiata al nostro elenco di lessici della community!</value>
+  </data>
+  <data name="ActionWiki">
+    <value>Wiki</value>
+  </data>
+  <data name="LexiconsOpenRepository">
+    <value>Apri repository dei lessici</value>
+  </data>
+  <data name="LexiconsOpenFile">
+    <value>Apri lessico</value>
+  </data>
+  <data name="FileDialogOpenFile">
+    <value>Apri un file...</value>
+  </data>
+  <!-- Lexicon Repository -->
+  <data name="LexiconRepositoryTitle">
+    <value>Repository dei lessici</value>
+  </data>
+  <data name="LexiconRepositoryColumnLexicon">
+    <value>Lessico</value>
+  </data>
+  <data name="LexiconRepositoryColumnStatus">
+    <value>Stato</value>
+  </data>
+  <data name="LexiconRepositoryColumnAuthors">
+    <value>Autori</value>
+  </data>
+  <data name="LexiconRepositoryStatusHasUpdate">
+    <value>Aggiornamento disponibile</value>
+  </data>
+  <data name="LexiconRepositoryStatusInstalled">
+    <value>Installato</value>
+  </data>
+  <data name="LexiconRepositoryPackageByFormat">
+    <value>{0} di {1}</value>
+  </data>
+  <data name="LexiconRepositoryFiles">
+    <value>File del pacchetto del lessico:</value>
+  </data>
+  <data name="LexiconRepositoryFileFormat">
+    <value> - {0}</value>
+  </data>
+  <data name="ActionInstall">
+    <value>Installa</value>
+  </data>
+  <data name="ActionUninstall">
+    <value>Disinstalla</value>
+  </data>
+  <data name="ActionUpdating">
+    <value>Aggiornamento in corso</value>
+  </data>
+  <data name="ActionUpdate">
+    <value>Aggiorna</value>
+  </data>
+  <data name="LexiconRepositoryEnabledBackends">
+    <value>Abilitato per i backend:</value>
+  </data>
+  <!-- Shared Backend Settings -->
+  <data name="BackendUngenderedPresets">
+    <value>Preset senza genere</value>
+  </data>
+  <data name="BackendUngenderedHelp">
+    <value>Per impostazione predefinita, gli NPC nel gioco hanno solo genere 0 o 1, indipendentemente dal loro genere canonico (o dall’assenza di genere). Di conseguenza, i personaggi senza genere devono essere specificati da noi affinché siano rappresentati correttamente nel gioco. Consulta https://github.com/karashiiro/TextToTalk/wiki/Adding-NPCs-to-the-Ungendered-Overrides-List per ulteriori informazioni.</value>
+  </data>
+  <data name="BackendNoUngenderedPresets">
+    <value>Nessun preset vocale senza genere selezionato.</value>
+  </data>
+  <data name="BackendMalePresets">
+    <value>Preset maschili</value>
+  </data>
+  <data name="BackendNoMalePresets">
+    <value>Nessun preset vocale maschile selezionato.</value>
+  </data>
+  <data name="BackendFemalePresets">
+    <value>Preset femminili</value>
+  </data>
+  <data name="BackendNoFemalePresets">
+    <value>Nessun preset vocale femminile selezionato.</value>
+  </data>
+  <data name="BackendVoiceUnsupported">
+    <value>Voce non supportata da questo motore</value>
+  </data>
+  <data name="BackendNoVoiceSelected">
+    <value>Nessuna voce selezionata</value>
+  </data>
+  <data name="BackendMultiplePresetsHint">
+    <value>Se vengono selezionati più preset per genere, verranno assegnati casualmente ai personaggi.</value>
+  </data>
+  <data name="BackendSwitchFailed"><value>Impossibile passare al backend {0}.</value></data>
+  <data name="BackendNoPresetsConfigured"><value>Non hai configurato alcun preset vocale.</value></data>
+  <data name="BackendCreatePresetHint"><value>Crea un preset vocale nella configurazione di TextToTalk.</value></data>
+
+  <!-- Megaphone -->
+  <data name="MegaphonePort">
+    <value>Porta</value>
+  </data>
+  <data name="MegaphonePortOutOfRange">
+    <value>La porta è fuori dall’intervallo [0, 65535]</value>
+  </data>
+  <data name="MegaphonePortInvalid">
+    <value>Impossibile interpretare la porta.</value>
+  </data>
+  <data name="MegaphoneInstallPrompt">
+    <value>Installa il plugin Dalamud Megaphone:</value>
+  </data>
+  <data name="MegaphoneOpenInstallGuide">
+    <value>Apri guida all’installazione</value>
+  </data>
+  <data name="MegaphoneServerStatusFormat">
+    <value>{0} su {1}</value>
+  </data>
+  <data name="MegaphoneServerStarted">
+    <value>Avviato</value>
+  </data>
+  <data name="MegaphoneServerWillStart">
+    <value>Verrà avviato</value>
+  </data>
+  <data name="MegaphoneRestartServer">
+    <value>Riavvia server</value>
+  </data>
+  <data name="ChatTypeFreeCompanyMemberLoginNotifications">
+    <value>Accessi alla compagnia libera</value>
+  </data>
+  <data name="ChatTypeDamageDealtByYou">
+    <value>Danni</value>
+  </data>
+  <data name="ChatTypeFailedAttacksOnYou">
+    <value>Attacchi mancati</value>
+  </data>
+  <data name="ChatTypeActionReadiedByYou">
+    <value>Azioni</value>
+  </data>
+  <data name="ChatTypeDetrimentalEffectsInflictedByYou">
+    <value>Effetti debilitanti inflitti da te</value>
+  </data>
+  <data name="ChatTypeBeneficialEffectOnYouEnded">
+    <value>Effetti benefici terminati</value>
+  </data>
+</root>

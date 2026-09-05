@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using R3;
 using TextToTalk.Events;
+using TextToTalk.Localization;
 
 namespace TextToTalk;
 
@@ -13,9 +14,7 @@ public partial class TextToTalk
             {
                 // Check all of the other filters to see if this should be dropped
                 var chatTypes = p.config.GetCurrentEnabledChatTypesPreset();
-                var typeEnabled = chatTypes.EnabledChatTypes is not null &&
-                                  chatTypes.EnabledChatTypes.Contains((int)ev.ChatType);
-                return chatTypes.EnableAllChatTypes || typeEnabled;
+                return ChatTypeMap.IsChatTypeEnabled(chatTypes.EnabledChatTypes, chatTypes.EnableAllChatTypes, ev.ChatType);
             })
             .Where(this, static (ev, p) => !p.IsTextBad(ev.Text.TextValue))
             .Where(this, static (ev, p) => p.IsTextGood(ev.Text.TextValue));

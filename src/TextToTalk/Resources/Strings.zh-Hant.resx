@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <!-- Main Window -->
+  <data name="ConfigurationTitle">
+    <value>TextToTalk 設定</value>
+  </data>
+  <data name="EnabledSuffix">
+    <value>已啟用</value>
+  </data>
+  <data name="DisabledSuffix">
+    <value>已停用</value>
+  </data>
+  <!-- Main Tabs -->
+  <data name="TabSynthesizerSettings">
+    <value>語音合成設定</value>
+  </data>
+  <data name="TabPlayerVoices">
+    <value>玩家語音</value>
+  </data>
+  <data name="TabNpcVoices">
+    <value>NPC 語音</value>
+  </data>
+  <data name="TabChannelSettings">
+    <value>頻道設定</value>
+  </data>
+  <data name="TabTriggersExclusions">
+    <value>觸發器/排除項</value>
+  </data>
+  <!-- Synthesizer Settings -->
+  <data name="SectionKeybinds">
+    <value>快捷鍵</value>
+  </data>
+  <data name="EnableKeybind">
+    <value>啟用快捷鍵</value>
+  </data>
+  <data name="TtsToggleKeybind">
+    <value>TTS 開關快捷鍵</value>
+  </data>
+  <data name="KeyControl">
+    <value>Ctrl</value>
+  </data>
+  <data name="KeyShift">
+    <value>Shift</value>
+  </data>
+  <data name="KeyAlt">
+    <value>Alt</value>
+  </data>
+  <data name="SectionGeneral">
+    <value>一般</value>
+  </data>
+  <data name="AudioOutputDevice">
+    <value>音訊輸出裝置</value>
+  </data>
+  <data name="Volume">
+    <value>音量</value>
+  </data>
+  <data name="VolumeHelp">
+    <value>調整所有 TTS 播放的音量。此值會與語音預設的音量相乘。</value>
+  </data>
+  <data name="ReadNpcDialogueFromDialogueWindow">
+    <value>從對話視窗朗讀 NPC 對話</value>
+  </data>
+  <data name="CancelSpeechOnTextAdvance">
+    <value>出現新文字或推進文字時停止目前的 NPC 語音</value>
+  </data>
+  <data name="SkipVoicedNpcDialogue">
+    <value>略過已有配音的 NPC 對話</value>
+  </data>
+  <data name="ReadNpcDialogueFromBattleWindow">
+    <value>從戰鬥對話視窗朗讀 NPC 對話</value>
+  </data>
+  <data name="SkipMessagesFromYou">
+    <value>略過自己送出的訊息</value>
+  </data>
+  <data name="OnlyMessagesFromYou">
+    <value>只朗讀自己送出的訊息</value>
+  </data>
+  <data name="EnableNameWithSay">
+    <value>有人說話時朗讀「X 說：」</value>
+  </data>
+  <data name="NameNpcWithSay">
+    <value>在 NPC 對話中也朗讀「NPC 名稱說：」</value>
+  </data>
+  <data name="SayPlayerWorldName">
+    <value>朗讀玩家的伺服器名稱</value>
+  </data>
+  <data name="DisallowMultipleSay">
+    <value>僅在角色第一次說話時朗讀「角色名稱說：」</value>
+  </data>
+  <data name="SayPartialName">
+    <value>只朗讀名字或姓氏</value>
+  </data>
+  <data name="OnlySayForename">
+    <value>只朗讀名字</value>
+  </data>
+  <data name="OnlySaySurname">
+    <value>只朗讀姓氏</value>
+  </data>
+  <data name="LimitPlayerTtsFrequency">
+    <value>限制玩家 TTS 頻率</value>
+  </data>
+  <data name="MessagesPerSecondFormat">
+    <value>%.3f 則訊息/秒</value>
+  </data>
+  <data name="SectionVoices">
+    <value>語音</value>
+  </data>
+  <data name="VoiceBackend">
+    <value>語音後端</value>
+  </data>
+  <data name="SectionExperimental">
+    <value>實驗性功能</value>
+  </data>
+  <data name="RemoveStutter">
+    <value>嘗試移除 NPC 對話中的結巴效果（預設：開啟）</value>
+  </data>
+  <data name="RemoveStutterHelp">
+    <value>移除 NPC 對話中的「結巴」效果，例如「你-你好，很-很高興認識你……」</value>
+  </data>
+  <!-- Player Voices -->
+  <data name="PlayerVoicesHint">
+    <value>使用下方選項為玩家設定特定的語音預設。</value>
+  </data>
+  <data name="UsePlayerVoicePresets">
+    <value>使用玩家語音預設</value>
+  </data>
+  <data name="TableName">
+    <value>名稱</value>
+  </data>
+  <data name="TableWorld">
+    <value>伺服器</value>
+  </data>
+  <data name="TablePreset">
+    <value>預設</value>
+  </data>
+  <data name="ActionDelete">
+    <value>刪除</value>
+  </data>
+  <data name="PlayerName">
+    <value>玩家名稱</value>
+  </data>
+  <data name="PlayerWorld">
+    <value>玩家伺服器</value>
+  </data>
+  <data name="ActionAddPlayer">
+    <value>新增玩家</value>
+  </data>
+  <data name="PlayerAddFailedDuplicate">
+    <value>無法新增玩家——是否為重複項目？</value>
+  </data>
+  <!-- NPC Voices -->
+  <data name="NpcVoicesHint">
+    <value>使用下方選項為 NPC 設定特定的語音預設。</value>
+  </data>
+  <data name="UseNpcVoicePresets">
+    <value>使用 NPC 語音預設</value>
+  </data>
+  <data name="NpcName">
+    <value>NPC 名稱</value>
+  </data>
+  <data name="ActionAddNpc">
+    <value>新增 NPC</value>
+  </data>
+  <data name="NpcAddFailedDuplicate">
+    <value>無法新增 NPC——是否為重複項目？</value>
+  </data>
+  <!-- Channel Settings -->
+  <data name="ChannelPreset">
+    <value>預設</value>
+  </data>
+  <data name="ActionNewPreset">
+    <value>新增預設</value>
+  </data>
+  <data name="ActionEdit">
+    <value>編輯</value>
+  </data>
+  <data name="RecommendedForTriggerUse">
+    <value>建議用於觸發器</value>
+  </data>
+  <data name="EnableAllIncludingUndocumented">
+    <value>全部啟用（包含未記錄的項目）</value>
+  </data>
+  <data name="ChatTypeDebug">
+    <value>偵錯</value>
+  </data>
+  <data name="ChatTypeCrossParty">
+    <value>跨服隊伍</value>
+  </data>
+  <data name="ChatTypeEnemyDefeatedByYou">
+    <value>由你擊敗的敵人</value>
+  </data>
+  <data name="ChatTypeOrchestrion">
+    <value>管弦樂琴</value>
+  </data>
+  <data name="ChatTypeTellIncoming">
+    <value>收到的密語</value>
+  </data>
+  <data name="ChatTypeTellOutgoing">
+    <value>送出的密語</value>
+  </data>
+  <!-- FFXIV Channel Labels -->
+  <data name="ChatTypeNone">
+    <value>無</value>
+  </data>
+  <data name="ChatTypeSay">
+    <value>èªªè©±</value>
+  </data>
+  <data name="ChatTypeShout">
+    <value>喊話</value>
+  </data>
+  <data name="ChatTypeParty">
+    <value>隊伍</value>
+  </data>
+  <data name="ChatTypeStandardEmote">
+    <value>標準情感動作</value>
+  </data>
+  <data name="ChatTypeCustomEmote">
+    <value>自訂情感動作</value>
+  </data>
+  <data name="ChatTypeFreeCompany">
+    <value>部隊</value>
+  </data>
+  <data name="ChatTypeLs1">
+    <value>聯絡貝 1</value>
+  </data>
+  <data name="ChatTypeLs2">
+    <value>聯絡貝 2</value>
+  </data>
+  <data name="ChatTypeLs3">
+    <value>聯絡貝 3</value>
+  </data>
+  <data name="ChatTypeLs4">
+    <value>聯絡貝 4</value>
+  </data>
+  <data name="ChatTypeLs5">
+    <value>聯絡貝 5</value>
+  </data>
+  <data name="ChatTypeLs6">
+    <value>聯絡貝 6</value>
+  </data>
+  <data name="ChatTypeLs7">
+    <value>聯絡貝 7</value>
+  </data>
+  <data name="ChatTypeLs8">
+    <value>聯絡貝 8</value>
+  </data>
+  <data name="ChatTypeYell">
+    <value>呼喊</value>
+  </data>
+  <data name="ChatTypeAlliance">
+    <value>聯盟</value>
+  </data>
+  <data name="ChatTypeNoviceNetwork">
+    <value>新人頻道</value>
+  </data>
+  <data name="ChatTypePvPTeam">
+    <value>PvP 小隊</value>
+  </data>
+  <data name="ChatTypeCrossLinkShell1">
+    <value>跨界聯絡貝 1</value>
+  </data>
+  <data name="ChatTypeSystemMessage">
+    <value>系統訊息</value>
+  </data>
+  <data name="ChatTypeGatheringSystemMessage">
+    <value>採集系統訊息</value>
+  </data>
+  <data name="ChatTypeErrorMessage">
+    <value>錯誤訊息</value>
+  </data>
+  <data name="ChatTypeEcho">
+    <value>回音</value>
+  </data>
+  <data name="ChatTypeNPCDialogue">
+    <value>NPC 對話</value>
+  </data>
+  <data name="ChatTypeLootNotice">
+    <value>獲得戰利品通知</value>
+  </data>
+  <data name="ChatTypeProgress">
+    <value>進度</value>
+  </data>
+  <data name="ChatTypeLootRoll">
+    <value>投擲戰利品</value>
+  </data>
+  <data name="ChatTypeCrafting">
+    <value>製作</value>
+  </data>
+  <data name="ChatTypeMessageBook">
+    <value>訊息冊通知</value>
+  </data>
+  <data name="ChatTypeGathering">
+    <value>採集</value>
+  </data>
+  <data name="ChatTypeSystemError">
+    <value>系統錯誤</value>
+  </data>
+  <data name="ChatTypeNPCDialogueAnnouncements">
+    <value>NPC 對話公告</value>
+  </data>
+  <data name="ChatTypeFreeCompanyAnnouncement">
+    <value>部隊公告</value>
+  </data>
+  <data name="ChatTypeFreeCompanyLoginLogout">
+    <value>部隊成員登入／登出</value>
+  </data>
+  <data name="ChatTypeRetainerSale">
+    <value>雇員販售</value>
+  </data>
+  <data name="ChatTypePeriodicRecruitmentNotification">
+    <value>定期招募通知</value>
+  </data>
+  <data name="ChatTypeSign">
+    <value>標記</value>
+  </data>
+  <data name="ChatTypeRandomNumber">
+    <value>隨機數字</value>
+  </data>
+  <data name="ChatTypeNoviceNetworkSystem">
+    <value>新人頻道系統訊息</value>
+  </data>
+  <data name="ChatTypePvpTeamAnnouncement">
+    <value>PvP 小隊公告</value>
+  </data>
+  <data name="ChatTypePvpTeamLoginLogout">
+    <value>PvP 小隊成員登入／登出</value>
+  </data>
+  <data name="ChatTypeDamage">
+    <value>傷害</value>
+  </data>
+  <data name="ChatTypeMiss">
+    <value>未命中</value>
+  </data>
+  <data name="ChatTypeAction">
+    <value>行動</value>
+  </data>
+  <data name="ChatTypeItem">
+    <value>道具</value>
+  </data>
+  <data name="ChatTypeHealing">
+    <value>治療</value>
+  </data>
+  <data name="ChatTypeGainBuff">
+    <value>獲得增益效果</value>
+  </data>
+  <data name="ChatTypeGainDebuff">
+    <value>獲得減益效果</value>
+  </data>
+  <data name="ChatTypeDamageYouAreDealt">
+    <value>你受到的傷害</value>
+  </data>
+  <data name="ChatTypeFailedActionUsedOnYou">
+    <value>對你使用的行動失敗</value>
+  </data>
+  <data name="ChatTypeActionUsedOnYou">
+    <value>對你使用的行動</value>
+  </data>
+  <data name="ChatTypeBeneficialEffectOnYou">
+    <value>對你施加的有益效果</value>
+  </data>
+  <data name="ChatTypeLoseBuff">
+    <value>失去增益效果</value>
+  </data>
+  <data name="ChatTypeLoseDebuff">
+    <value>失去減益效果</value>
+  </data>
+  <data name="ChatTypeAlarm">
+    <value>警報</value>
+  </data>
+  <data name="ChatTypeGlamourNotifications">
+    <value>投影通知</value>
+  </data>
+  <data name="ChatTypeActionUsedByOtherPlayer">
+    <value>其他玩家使用的行動</value>
+  </data>
+  <data name="ChatTypeBeneficialEffectOnOtherPlayer">
+    <value>對其他玩家施加的有益效果</value>
+  </data>
+  <data name="ChatTypeDetrimentalEffectOnOtherPlayer">
+    <value>對其他玩家施加的有害效果</value>
+  </data>
+  <data name="ChatTypeBeneficialEffectOnOtherPlayerEnded">
+    <value>對其他玩家施加的有益效果結束</value>
+  </data>
+  <data name="ChatTypeActionReadiedByEngagedEnemy">
+    <value>交戰敵人準備使用的行動</value>
+  </data>
+  <data name="ChatTypeDetrimentalEffectOnEnemyEnded">
+    <value>敵人身上的有害效果結束</value>
+  </data>
+  <data name="ChatTypeCrossLinkShell2">
+    <value>跨界聯絡貝 2</value>
+  </data>
+  <data name="ChatTypeCrossLinkShell3">
+    <value>跨界聯絡貝 3</value>
+  </data>
+  <data name="ChatTypeCrossLinkShell4">
+    <value>跨界聯絡貝 4</value>
+  </data>
+  <data name="ChatTypeCrossLinkShell5">
+    <value>跨界聯絡貝 5</value>
+  </data>
+  <data name="ChatTypeCrossLinkShell6">
+    <value>跨界聯絡貝 6</value>
+  </data>
+  <data name="ChatTypeCrossLinkShell7">
+    <value>跨界聯絡貝 7</value>
+  </data>
+  <data name="ChatTypeCrossLinkShell8">
+    <value>跨界聯絡貝 8</value>
+  </data>
+  <data name="ChatTypeUrgent">
+    <value>緊急</value>
+  </data>
+  <data name="ChatTypeNotice">
+    <value>通知</value>
+  </data>
+  <!-- Triggers and Exclusions -->
+  <data name="EnableAllChatTypesIncludingUndocumented">
+    <value>啟用所有聊天類型（包含未記錄的類型）</value>
+  </data>
+  <data name="TriggersHeading">
+    <value>觸發器</value>
+  </data>
+  <data name="ExclusionsHeading">
+    <value>排除項</value>
+  </data>
+  <data name="TriggerInputHintFormat">
+    <value>在此輸入 {0}...</value>
+  </data>
+  <data name="TriggersRegex">
+    <value>正規表示式</value>
+  </data>
+  <data name="ActionRemove">
+    <value>移除</value>
+  </data>
+  <data name="ActionAddFormat">
+    <value>新增 {0}</value>
+  </data>
+  <!-- Channel Preset Window -->
+  <data name="ChannelPresetWindowTitle">
+    <value>預設</value>
+  </data>
+  <data name="ChannelPresetName">
+    <value>名稱</value>
+  </data>
+  <data name="ChannelPresetEnableKeybind">
+    <value>預設啟用快捷鍵</value>
+  </data>
+  <data name="ActionClose">
+    <value>關閉</value>
+  </data>
+  <!-- Voice Unlocker -->
+  <data name="VoiceUnlockerTitle">
+    <value>VoiceUnlocker</value>
+  </data>
+  <data name="VoiceUnlockerManualTutorial">
+    <value>手動設定教學</value>
+  </data>
+  <data name="VoiceUnlockerEnableAll">
+    <value>啟用所有系統語音</value>
+  </data>
+  <data name="VoiceUnlockerWindows10Warning">
+    <value>此修改僅在 Windows 10 上測試過。</value>
+  </data>
+  <data name="VoiceUnlockerManualWarningFormat">
+    <value>此功能會透過在系統登錄的不同區段之間複製機碼來啟用所有系統 TTS 語音。此修改可能無法自動還原。如果想手動執行此修改，請按一下「{0}」按鈕。</value>
+  </data>
+  <data name="VoiceUnlockerAutomaticWarningFormat">
+    <value>如果想繼續自動設定，請按一下「{0}」按鈕。不會考量由你先前進行的登錄修改所造成的系統不穩定，且不會針對這類情況提供支援。</value>
+  </data>
+  <data name="VoiceUnlockerSuccess">
+    <value>登錄修改成功。重新啟動遊戲後將套用變更。</value>
+  </data>
+  <data name="VoiceUnlockerStartFailed">
+    <value>VoiceUnlocker 啟動失敗。未對登錄進行任何修改。</value>
+  </data>
+  <data name="VoiceUnlockerAdminRequired">
+    <value>將要求系統管理員權限</value>
+  </data>
+  <data name="VoiceUnlockerResultTitle">
+    <value>VoiceUnlocker 結果</value>
+  </data>
+  <!-- Voice Styles -->
+  <data name="VoiceStylesTitle">
+    <value>語音風格</value>
+  </data>
+  <data name="VoiceStylesConfigureAdHocTags">
+    <value>設定臨時風格標籤</value>
+  </data>
+  <data name="VoiceStylesEnableAdHocTags">
+    <value>啟用臨時風格標籤</value>
+  </data>
+  <data name="VoiceStylesAdHocTagsHelp">
+    <value>勾選後，包含風格標籤的聊天訊息會使用該風格進行語音合成。這會覆寫語音預設中設定的任何風格。</value>
+  </data>
+  <data name="VoiceStylesDelimiter">
+    <value>風格標籤分隔符號</value>
+  </data>
+  <data name="VoiceStylesDelimiterHint">
+    <value>風格標籤</value>
+  </data>
+  <data name="VoiceStylesExampleFormat">
+    <value>範例：{0}低聲耳語{0} 哈囉，世界</value>
+  </data>
+  <data name="VoiceStylesUnsupportedBackend">
+    <value>此後端尚不支援動態風格。</value>
+  </data>
+  <!-- Lexicons -->
+  <data name="LexiconsTitle">
+    <value>發音詞典</value>
+  </data>
+  <data name="LexiconsCommunityHint">
+    <value>想找更多發音詞典嗎？看看我們的社群發音詞典清單吧！</value>
+  </data>
+  <data name="ActionWiki">
+    <value>Wiki</value>
+  </data>
+  <data name="LexiconsOpenRepository">
+    <value>開啟發音詞典儲存庫</value>
+  </data>
+  <data name="LexiconsOpenFile">
+    <value>開啟發音詞典</value>
+  </data>
+  <data name="FileDialogOpenFile">
+    <value>開啟檔案...</value>
+  </data>
+  <!-- Lexicon Repository -->
+  <data name="LexiconRepositoryTitle">
+    <value>發音詞典儲存庫</value>
+  </data>
+  <data name="LexiconRepositoryColumnLexicon">
+    <value>發音詞典</value>
+  </data>
+  <data name="LexiconRepositoryColumnStatus">
+    <value>狀態</value>
+  </data>
+  <data name="LexiconRepositoryColumnAuthors">
+    <value>作者</value>
+  </data>
+  <data name="LexiconRepositoryStatusHasUpdate">
+    <value>有可用更新</value>
+  </data>
+  <data name="LexiconRepositoryStatusInstalled">
+    <value>已安裝</value>
+  </data>
+  <data name="LexiconRepositoryPackageByFormat">
+    <value>{0}，作者：{1}</value>
+  </data>
+  <data name="LexiconRepositoryFiles">
+    <value>發音詞典套件檔案：</value>
+  </data>
+  <data name="LexiconRepositoryFileFormat">
+    <value> - {0}</value>
+  </data>
+  <data name="ActionInstall">
+    <value>安裝</value>
+  </data>
+  <data name="ActionUninstall">
+    <value>解除安裝</value>
+  </data>
+  <data name="ActionUpdating">
+    <value>正在更新</value>
+  </data>
+  <data name="ActionUpdate">
+    <value>更新</value>
+  </data>
+  <data name="LexiconRepositoryEnabledBackends">
+    <value>已為以下後端啟用：</value>
+  </data>
+  <!-- Shared Backend Settings -->
+  <data name="BackendUngenderedPresets">
+    <value>無性別預設</value>
+  </data>
+  <data name="BackendUngenderedHelp">
+    <value>預設情況下，遊戲中的 NPC 只有 0 和 1 兩種性別值，不論其設定中的性別為何（或是否沒有性別）。因此，為了在遊戲中正確反映無性別角色，我們需要另外指定這些角色。更多資訊請參閱 https://github.com/karashiiro/TextToTalk/wiki/Adding-NPCs-to-the-Ungendered-Overrides-List</value>
+  </data>
+  <data name="BackendNoUngenderedPresets">
+    <value>未選擇無性別語音預設。</value>
+  </data>
+  <data name="BackendMalePresets">
+    <value>男性預設</value>
+  </data>
+  <data name="BackendNoMalePresets">
+    <value>未選擇男性語音預設。</value>
+  </data>
+  <data name="BackendFemalePresets">
+    <value>女性預設</value>
+  </data>
+  <data name="BackendNoFemalePresets">
+    <value>未選擇女性語音預設。</value>
+  </data>
+  <data name="BackendVoiceUnsupported">
+    <value>此引擎不支援此語音</value>
+  </data>
+  <data name="BackendNoVoiceSelected">
+    <value>未選擇語音</value>
+  </data>
+  <data name="BackendMultiplePresetsHint">
+    <value>如果每種性別選擇多個預設，系統會隨機將它們指派給角色。</value>
+  </data>
+  <data name="BackendSwitchFailed"><value>無法切換至 {0} 後端。</value></data>
+  <data name="BackendNoPresetsConfigured"><value>你尚未設定任何語音預設。</value></data>
+  <data name="BackendCreatePresetHint"><value>請在 TextToTalk 設定中建立語音預設。</value></data>
+
+  <!-- Megaphone -->
+  <data name="MegaphonePort">
+    <value>連接埠</value>
+  </data>
+  <data name="MegaphonePortOutOfRange">
+    <value>連接埠超出範圍 [0, 65535]</value>
+  </data>
+  <data name="MegaphonePortInvalid">
+    <value>無法解析連接埠。</value>
+  </data>
+  <data name="MegaphoneInstallPrompt">
+    <value>安裝 Megaphone Dalamud 外掛程式：</value>
+  </data>
+  <data name="MegaphoneOpenInstallGuide">
+    <value>開啟安裝指南</value>
+  </data>
+  <data name="MegaphoneServerStatusFormat">
+    <value>{0} 於 {1}</value>
+  </data>
+  <data name="MegaphoneServerStarted">
+    <value>已啟動</value>
+  </data>
+  <data name="MegaphoneServerWillStart">
+    <value>即將啟動</value>
+  </data>
+  <data name="MegaphoneRestartServer">
+    <value>重新啟動伺服器</value>
+  </data>
+  <data name="ChatTypeFreeCompanyMemberLoginNotifications">
+    <value>部隊成員登入通知</value>
+  </data>
+  <data name="ChatTypeDamageDealtByYou">
+    <value>傷害</value>
+  </data>
+  <data name="ChatTypeFailedAttacksOnYou">
+    <value>未命中</value>
+  </data>
+  <data name="ChatTypeActionReadiedByYou">
+    <value>行動</value>
+  </data>
+  <data name="ChatTypeDetrimentalEffectsInflictedByYou">
+    <value>你施加的減益效果</value>
+  </data>
+  <data name="ChatTypeBeneficialEffectOnYouEnded">
+    <value>失去增益效果</value>
+  </data>
+</root>

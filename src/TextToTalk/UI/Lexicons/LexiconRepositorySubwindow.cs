@@ -8,6 +8,7 @@ using Dalamud.Bindings.ImGui;
 using TextToTalk.Backends;
 using TextToTalk.Lexicons;
 using TextToTalk.Lexicons.Updater;
+using TextToTalk.Resources;
 
 namespace TextToTalk.UI.Lexicons;
 
@@ -48,7 +49,7 @@ public class LexiconRepositorySubwindow
     public void Draw(ref bool visible)
     {
         ImGui.SetNextWindowSize(new Vector2(670, 480), ImGuiCond.Appearing);
-        ImGui.Begin("Lexicon Repository##TTTLexiconRepositorySubwindow", ref visible);
+        ImGui.Begin($"{Strings.Get("LexiconRepositoryTitle")}##TTTLexiconRepositorySubwindow", ref visible);
         {
             DrawPackageList();
             DrawSelectedPackageInfo();
@@ -67,9 +68,9 @@ public class LexiconRepositorySubwindow
         }
         else if (ImGui.BeginTable("##TTTLexiconRepoList", 3, ImGuiTableFlags.Borders))
         {
-            ImGui.TableSetupColumn("Lexicon");
-            ImGui.TableSetupColumn("Status");
-            ImGui.TableSetupColumn("Authors");
+            ImGui.TableSetupColumn(Strings.Get("LexiconRepositoryColumnLexicon"));
+            ImGui.TableSetupColumn(Strings.Get("LexiconRepositoryColumnStatus"));
+            ImGui.TableSetupColumn(Strings.Get("LexiconRepositoryColumnAuthors"));
             ImGui.TableHeadersRow();
 
             if (this.remotePackages != null)
@@ -96,11 +97,11 @@ public class LexiconRepositorySubwindow
                         ImGui.TableSetColumnIndex(1);
                         if (packageStatus.HasUpdate)
                         {
-                            ImGui.Text("Has update");
+                            ImGui.Text(Strings.Get("LexiconRepositoryStatusHasUpdate"));
                         }
                         else if (packageStatus.Installed)
                         {
-                            ImGui.Text("Installed");
+                            ImGui.Text(Strings.Get("LexiconRepositoryStatusInstalled"));
                         }
 
                         ImGui.TableSetColumnIndex(2);
@@ -120,27 +121,27 @@ public class LexiconRepositorySubwindow
             var (selectedPackageData, selectedPackageStatus) = this.selectedPackage;
             if (selectedPackageData != null)
             {
-                ImGui.Text($"{selectedPackageData.Name} by {selectedPackageData.Author}");
+                ImGui.Text(string.Format(Strings.Get("LexiconRepositoryPackageByFormat"), selectedPackageData.Name, selectedPackageData.Author));
                 ImGui.TextWrapped(selectedPackageData.Description);
 
                 ImGui.Spacing();
                 ImGui.Spacing();
-                ImGui.Text("Lexicon package files:");
+                ImGui.Text(Strings.Get("LexiconRepositoryFiles"));
                 foreach (var file in selectedPackageData.Files)
                 {
-                    ImGui.Text($" - {file}");
+                    ImGui.Text(string.Format(Strings.Get("LexiconRepositoryFileFormat"), file));
                 }
 
                 ImGui.Spacing();
                 if (!selectedPackageStatus.Installed)
                 {
-                    if (ImGui.Button("Install##TTTLexiconRepoInstall"))
+                    if (ImGui.Button($"{Strings.Get("ActionInstall")}##TTTLexiconRepoInstall"))
                     {
                         _ = InstallLexicon(selectedPackageData.InternalName);
                         selectedPackageStatus.Installed = true;
                     }
                 }
-                else if (ImGui.Button("Uninstall##TTTLexiconRepoUninstall"))
+                else if (ImGui.Button($"{Strings.Get("ActionUninstall")}##TTTLexiconRepoUninstall"))
                 {
                     UninstallLexicon(selectedPackageData.InternalName);
                     selectedPackageStatus.Installed = false;
@@ -151,9 +152,9 @@ public class LexiconRepositorySubwindow
                     ImGui.SameLine();
                     if (selectedPackageStatus.Updating)
                     {
-                        ImGui.Button("Updating##TextToTalkLexiconRepoUpdating");
+                        ImGui.Button($"{Strings.Get("ActionUpdating")}##TextToTalkLexiconRepoUpdating");
                     }
-                    else if (ImGui.Button("Update##TTTLexiconRepoUpdate"))
+                    else if (ImGui.Button($"{Strings.Get("ActionUpdate")}##TTTLexiconRepoUpdate"))
                     {
                         selectedPackageStatus.Updating = true;
                         Task.Run(async () =>
@@ -177,7 +178,7 @@ public class LexiconRepositorySubwindow
             {
                 ImGui.Separator();
 
-                ImGui.Text("Enabled for backends:");
+                ImGui.Text(Strings.Get("LexiconRepositoryEnabledBackends"));
                 ImGui.Indent();
                 {
                     foreach (var backend in Enum.GetValues<TTSBackend>().Where(b => b.AreLexiconsEnabled()))

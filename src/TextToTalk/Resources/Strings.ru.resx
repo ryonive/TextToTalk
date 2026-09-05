@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <!-- Main Window -->
+  <data name="ConfigurationTitle">
+    <value>Настройки TextToTalk</value>
+  </data>
+  <data name="EnabledSuffix">
+    <value>Включено</value>
+  </data>
+  <data name="DisabledSuffix">
+    <value>Отключено</value>
+  </data>
+  <!-- Main Tabs -->
+  <data name="TabSynthesizerSettings">
+    <value>Настройки синтезатора</value>
+  </data>
+  <data name="TabPlayerVoices">
+    <value>Голоса игроков</value>
+  </data>
+  <data name="TabNpcVoices">
+    <value>Голоса NPC</value>
+  </data>
+  <data name="TabChannelSettings">
+    <value>Настройки каналов</value>
+  </data>
+  <data name="TabTriggersExclusions">
+    <value>Триггеры/Исключения</value>
+  </data>
+  <!-- Synthesizer Settings -->
+  <data name="SectionKeybinds">
+    <value>Сочетания клавиш</value>
+  </data>
+  <data name="EnableKeybind">
+    <value>Включить сочетание клавиш</value>
+  </data>
+  <data name="TtsToggleKeybind">
+    <value>Сочетание для включения/выключения TTS</value>
+  </data>
+  <data name="KeyControl">
+    <value>Ctrl</value>
+  </data>
+  <data name="KeyShift">
+    <value>Shift</value>
+  </data>
+  <data name="KeyAlt">
+    <value>Alt</value>
+  </data>
+  <data name="SectionGeneral">
+    <value>Общие</value>
+  </data>
+  <data name="AudioOutputDevice">
+    <value>Устройство вывода звука</value>
+  </data>
+  <data name="Volume">
+    <value>Громкость</value>
+  </data>
+  <data name="VolumeHelp">
+    <value>Регулирует громкость всего воспроизведения TTS. Это значение умножается на громкость голосового пресета.</value>
+  </data>
+  <data name="ReadNpcDialogueFromDialogueWindow">
+    <value>Читать диалоги NPC из окна диалога</value>
+  </data>
+  <data name="CancelSpeechOnTextAdvance">
+    <value>Прерывать текущую речь NPC при появлении нового текста или переходе к следующему тексту</value>
+  </data>
+  <data name="SkipVoicedNpcDialogue">
+    <value>Пропускать озвученные диалоги NPC</value>
+  </data>
+  <data name="ReadNpcDialogueFromBattleWindow">
+    <value>Читать диалоги NPC из окна боевого диалога</value>
+  </data>
+  <data name="SkipMessagesFromYou">
+    <value>Пропускать ваши сообщения</value>
+  </data>
+  <data name="OnlyMessagesFromYou">
+    <value>Читать только ваши сообщения</value>
+  </data>
+  <data name="EnableNameWithSay">
+    <value>Произносить &quot;X говорит:&quot;, когда кто-либо говорит</value>
+  </data>
+  <data name="NameNpcWithSay">
+    <value>Также произносить &quot;Имя NPC говорит:&quot; в диалогах NPC</value>
+  </data>
+  <data name="SayPlayerWorldName">
+    <value>Произносить название мира игрока</value>
+  </data>
+  <data name="DisallowMultipleSay">
+    <value>Произносить &quot;Имя персонажа говорит:&quot; только при первой реплике персонажа</value>
+  </data>
+  <data name="SayPartialName">
+    <value>Произносить только имя или фамилию</value>
+  </data>
+  <data name="OnlySayForename">
+    <value>Произносить только имя</value>
+  </data>
+  <data name="OnlySaySurname">
+    <value>Произносить только фамилию</value>
+  </data>
+  <data name="LimitPlayerTtsFrequency">
+    <value>Ограничить частоту TTS для игроков</value>
+  </data>
+  <data name="MessagesPerSecondFormat">
+    <value>%.3f сообщ./с</value>
+  </data>
+  <data name="SectionVoices">
+    <value>Голоса</value>
+  </data>
+  <data name="VoiceBackend">
+    <value>Голосовой движок</value>
+  </data>
+  <data name="SectionExperimental">
+    <value>Экспериментальные</value>
+  </data>
+  <data name="RemoveStutter">
+    <value>Пытаться удалять заикание из диалогов NPC (по умолчанию: Вкл.)</value>
+  </data>
+  <data name="RemoveStutterHelp">
+    <value>Удаляет &quot;заикание&quot; из диалогов NPC, например &quot;П-привет, р-рад познакомиться...&quot;</value>
+  </data>
+  <!-- Player Voices -->
+  <data name="PlayerVoicesHint">
+    <value>Назначьте отдельные голосовые пресеты игрокам с помощью параметров ниже.</value>
+  </data>
+  <data name="UsePlayerVoicePresets">
+    <value>Использовать голосовые пресеты игроков</value>
+  </data>
+  <data name="TableName">
+    <value>Имя</value>
+  </data>
+  <data name="TableWorld">
+    <value>Мир</value>
+  </data>
+  <data name="TablePreset">
+    <value>Пресет</value>
+  </data>
+  <data name="ActionDelete">
+    <value>Удалить</value>
+  </data>
+  <data name="PlayerName">
+    <value>Имя игрока</value>
+  </data>
+  <data name="PlayerWorld">
+    <value>Мир игрока</value>
+  </data>
+  <data name="ActionAddPlayer">
+    <value>Добавить игрока</value>
+  </data>
+  <data name="PlayerAddFailedDuplicate">
+    <value>Не удалось добавить игрока. Возможно, это дубликат?</value>
+  </data>
+  <!-- NPC Voices -->
+  <data name="NpcVoicesHint">
+    <value>Назначьте отдельные голосовые пресеты NPC с помощью параметров ниже.</value>
+  </data>
+  <data name="UseNpcVoicePresets">
+    <value>Использовать голосовые пресеты NPC</value>
+  </data>
+  <data name="NpcName">
+    <value>Имя NPC</value>
+  </data>
+  <data name="ActionAddNpc">
+    <value>Добавить NPC</value>
+  </data>
+  <data name="NpcAddFailedDuplicate">
+    <value>Не удалось добавить NPC. Возможно, это дубликат?</value>
+  </data>
+  <!-- Channel Settings -->
+  <data name="ChannelPreset">
+    <value>Пресет</value>
+  </data>
+  <data name="ActionNewPreset">
+    <value>Новый пресет</value>
+  </data>
+  <data name="ActionEdit">
+    <value>Изменить</value>
+  </data>
+  <data name="RecommendedForTriggerUse">
+    <value>Рекомендуется для использования с триггерами</value>
+  </data>
+  <data name="EnableAllIncludingUndocumented">
+    <value>Включить всё (включая недокументированное)</value>
+  </data>
+  <data name="ChatTypeDebug">
+    <value>Отладка</value>
+  </data>
+  <data name="ChatTypeCrossParty">
+    <value>Межмировая группа</value>
+  </data>
+  <data name="ChatTypeEnemyDefeatedByYou">
+    <value>Враг, побеждённый вами</value>
+  </data>
+  <data name="ChatTypeOrchestrion">
+    <value>Orchestrion</value>
+  </data>
+  <data name="ChatTypeTellIncoming">
+    <value>Входящие Tell</value>
+  </data>
+  <data name="ChatTypeTellOutgoing">
+    <value>Исходящие Tell</value>
+  </data>
+  <!-- Channel Settings - Log Filter Channels -->
+  <data name="ChatTypeNone">
+    <value>Нет</value>
+  </data>
+  <data name="ChatTypeSay">
+    <value>Сказать</value>
+  </data>
+  <data name="ChatTypeShout">
+    <value>Крик</value>
+  </data>
+  <data name="ChatTypeParty">
+    <value>Группа</value>
+  </data>
+  <data name="ChatTypeStandardEmote">
+    <value>Стандартная эмоция</value>
+  </data>
+  <data name="ChatTypeCustomEmote">
+    <value>Пользовательская эмоция</value>
+  </data>
+  <data name="ChatTypeFreeCompany">
+    <value>Свободная компания</value>
+  </data>
+  <data name="ChatTypeLs1">
+    <value>Линкселл 1</value>
+  </data>
+  <data name="ChatTypeLs2">
+    <value>Линкселл 2</value>
+  </data>
+  <data name="ChatTypeLs3">
+    <value>Линкселл 3</value>
+  </data>
+  <data name="ChatTypeLs4">
+    <value>Линкселл 4</value>
+  </data>
+  <data name="ChatTypeLs5">
+    <value>Линкселл 5</value>
+  </data>
+  <data name="ChatTypeLs6">
+    <value>Линкселл 6</value>
+  </data>
+  <data name="ChatTypeLs7">
+    <value>Линкселл 7</value>
+  </data>
+  <data name="ChatTypeLs8">
+    <value>Линкселл 8</value>
+  </data>
+  <data name="ChatTypeYell">
+    <value>Возглас</value>
+  </data>
+  <data name="ChatTypeAlliance">
+    <value>Альянс</value>
+  </data>
+  <data name="ChatTypeNoviceNetwork">
+    <value>Сеть новичков</value>
+  </data>
+  <data name="ChatTypePvPTeam">
+    <value>PvP-команда</value>
+  </data>
+  <data name="ChatTypeCrossLinkShell1">
+    <value>Межмировой линкселл 1</value>
+  </data>
+  <data name="ChatTypeSystemMessage">
+    <value>Системные сообщения</value>
+  </data>
+  <data name="ChatTypeGatheringSystemMessage">
+    <value>Сообщения о собирательстве</value>
+  </data>
+  <data name="ChatTypeErrorMessage">
+    <value>Сообщения об ошибках</value>
+  </data>
+  <data name="ChatTypeEcho">
+    <value>Эхо</value>
+  </data>
+  <data name="ChatTypeNPCDialogue">
+    <value>Диалоги NPC</value>
+  </data>
+  <data name="ChatTypeLootNotice">
+    <value>Сообщения о добыче</value>
+  </data>
+  <data name="ChatTypeProgress">
+    <value>Прогресс</value>
+  </data>
+  <data name="ChatTypeLootRoll">
+    <value>Результаты бросков</value>
+  </data>
+  <data name="ChatTypeCrafting">
+    <value>Создание предметов</value>
+  </data>
+  <data name="ChatTypeMessageBook">
+    <value>Уведомление книги сообщений</value>
+  </data>
+  <data name="ChatTypeGathering">
+    <value>Собирательство</value>
+  </data>
+  <data name="ChatTypeSystemError">
+    <value>Системные ошибки</value>
+  </data>
+  <data name="ChatTypeNPCDialogueAnnouncements">
+    <value>Объявления NPC</value>
+  </data>
+  <data name="ChatTypeFreeCompanyAnnouncement">
+    <value>Объявления свободной компании</value>
+  </data>
+  <data name="ChatTypeFreeCompanyLoginLogout">
+    <value>Уведомления о входе и выходе участников свободной компании</value>
+  </data>
+  <data name="ChatTypeRetainerSale">
+    <value>Продажа через слугу</value>
+  </data>
+  <data name="ChatTypePeriodicRecruitmentNotification">
+    <value>Периодические уведомления о наборе</value>
+  </data>
+  <data name="ChatTypeSign">
+    <value>Знаки</value>
+  </data>
+  <data name="ChatTypeRandomNumber">
+    <value>Случайное число</value>
+  </data>
+  <data name="ChatTypeNoviceNetworkSystem">
+    <value>Системные сообщения сети новичков</value>
+  </data>
+  <data name="ChatTypePvpTeamAnnouncement">
+    <value>Объявления PvP-команды</value>
+  </data>
+  <data name="ChatTypePvpTeamLoginLogout">
+    <value>Уведомления о входе и выходе участников PvP-команды</value>
+  </data>
+  <data name="ChatTypeDamage">
+    <value>Урон</value>
+  </data>
+  <data name="ChatTypeMiss">
+    <value>Промах</value>
+  </data>
+  <data name="ChatTypeAction">
+    <value>Действие</value>
+  </data>
+  <data name="ChatTypeItem">
+    <value>Предмет</value>
+  </data>
+  <data name="ChatTypeHealing">
+    <value>Исцеление</value>
+  </data>
+  <data name="ChatTypeGainBuff">
+    <value>Полученный положительный эффект</value>
+  </data>
+  <data name="ChatTypeGainDebuff">
+    <value>Полученный отрицательный эффект</value>
+  </data>
+  <data name="ChatTypeDamageYouAreDealt">
+    <value>Полученный урон</value>
+  </data>
+  <data name="ChatTypeFailedActionUsedOnYou">
+    <value>Неудачная атака</value>
+  </data>
+  <data name="ChatTypeActionUsedOnYou">
+    <value>Использованное на вас действие</value>
+  </data>
+  <data name="ChatTypeBeneficialEffectOnYou">
+    <value>Положительный эффект на вас</value>
+  </data>
+  <data name="ChatTypeLoseBuff">
+    <value>Снятый положительный эффект</value>
+  </data>
+  <data name="ChatTypeLoseDebuff">
+    <value>Снятый отрицательный эффект</value>
+  </data>
+  <data name="ChatTypeAlarm">
+    <value>Сигнал</value>
+  </data>
+  <data name="ChatTypeGlamourNotifications">
+    <value>Уведомления о гламуре</value>
+  </data>
+  <data name="ChatTypeActionUsedByOtherPlayer">
+    <value>Действие, использованное другим игроком</value>
+  </data>
+  <data name="ChatTypeBeneficialEffectOnOtherPlayer">
+    <value>Положительный эффект на другого игрока</value>
+  </data>
+  <data name="ChatTypeDetrimentalEffectOnOtherPlayer">
+    <value>Отрицательный эффект на другого игрока</value>
+  </data>
+  <data name="ChatTypeBeneficialEffectOnOtherPlayerEnded">
+    <value>Завершившийся положительный эффект на другого игрока</value>
+  </data>
+  <data name="ChatTypeActionReadiedByEngagedEnemy">
+    <value>Подготовленное действие атакующего врага</value>
+  </data>
+  <data name="ChatTypeDetrimentalEffectOnEnemyEnded">
+    <value>Завершившийся отрицательный эффект на врага</value>
+  </data>
+  <data name="ChatTypeCrossLinkShell2">
+    <value>Межмировой линкселл 2</value>
+  </data>
+  <data name="ChatTypeCrossLinkShell3">
+    <value>Межмировой линкселл 3</value>
+  </data>
+  <data name="ChatTypeCrossLinkShell4">
+    <value>Межмировой линкселл 4</value>
+  </data>
+  <data name="ChatTypeCrossLinkShell5">
+    <value>Межмировой линкселл 5</value>
+  </data>
+  <data name="ChatTypeCrossLinkShell6">
+    <value>Межмировой линкселл 6</value>
+  </data>
+  <data name="ChatTypeCrossLinkShell7">
+    <value>Межмировой линкселл 7</value>
+  </data>
+  <data name="ChatTypeCrossLinkShell8">
+    <value>Межмировой линкселл 8</value>
+  </data>
+  <!-- Channel Settings - Addon Channels -->
+  <data name="ChatTypeUrgent">
+    <value>Срочно</value>
+  </data>
+  <data name="ChatTypeNotice">
+    <value>Уведомление</value>
+  </data>
+  <!-- Triggers and Exclusions -->
+  <data name="EnableAllChatTypesIncludingUndocumented">
+    <value>Включить все типы чата (включая недокументированные)</value>
+  </data>
+  <data name="TriggersHeading">
+    <value>Триггеры</value>
+  </data>
+  <data name="ExclusionsHeading">
+    <value>Исключения</value>
+  </data>
+  <data name="TriggerInputHintFormat">
+    <value>Введите {0} здесь...</value>
+  </data>
+  <data name="TriggersRegex">
+    <value>Регулярное выражение</value>
+  </data>
+  <data name="ActionRemove">
+    <value>Удалить</value>
+  </data>
+  <data name="ActionAddFormat">
+    <value>Добавить {0}</value>
+  </data>
+  <!-- Channel Preset Window -->
+  <data name="ChannelPresetWindowTitle">
+    <value>Пресет</value>
+  </data>
+  <data name="ChannelPresetName">
+    <value>Имя</value>
+  </data>
+  <data name="ChannelPresetEnableKeybind">
+    <value>Сочетание клавиш для включения пресета</value>
+  </data>
+  <data name="ActionClose">
+    <value>Закрыть</value>
+  </data>
+  <!-- Voice Unlocker -->
+  <data name="VoiceUnlockerTitle">
+    <value>VoiceUnlocker</value>
+  </data>
+  <data name="VoiceUnlockerManualTutorial">
+    <value>Инструкция по ручной настройке</value>
+  </data>
+  <data name="VoiceUnlockerEnableAll">
+    <value>Включить все системные голоса</value>
+  </data>
+  <data name="VoiceUnlockerWindows10Warning">
+    <value>Эта модификация протестирована только в Windows 10.</value>
+  </data>
+  <data name="VoiceUnlockerManualWarningFormat">
+    <value>Эта функция включит все системные голоса TTS, копируя ключи между разделами системного реестра. Эта модификация может не быть автоматически отменена. Если вы хотите выполнить её вручную, нажмите кнопку &quot;{0}&quot;.</value>
+  </data>
+  <data name="VoiceUnlockerAutomaticWarningFormat">
+    <value>Чтобы продолжить автоматическую настройку, нажмите кнопку &quot;{0}&quot;. Возможная нестабильность системы, связанная с ранее выполненными вами изменениями реестра, не учитывается, и поддержка для таких случаев не предоставляется.</value>
+  </data>
+  <data name="VoiceUnlockerSuccess">
+    <value>Реестр успешно изменён. Изменения вступят в силу после перезапуска игры.</value>
+  </data>
+  <data name="VoiceUnlockerStartFailed">
+    <value>Не удалось запустить VoiceUnlocker. Реестр не был изменён.</value>
+  </data>
+  <data name="VoiceUnlockerAdminRequired">
+    <value>Будут запрошены права администратора</value>
+  </data>
+  <data name="VoiceUnlockerResultTitle">
+    <value>Результат VoiceUnlocker</value>
+  </data>
+  <!-- Voice Styles -->
+  <data name="VoiceStylesTitle">
+    <value>Стили голоса</value>
+  </data>
+  <data name="VoiceStylesConfigureAdHocTags">
+    <value>Настроить специальные теги стиля</value>
+  </data>
+  <data name="VoiceStylesEnableAdHocTags">
+    <value>Включить специальные теги стиля</value>
+  </data>
+  <data name="VoiceStylesAdHocTagsHelp">
+    <value>Если включено, сообщения чата с тегом стиля будут синтезироваться в этом стиле. Это переопределяет стили, заданные в голосовом пресете.</value>
+  </data>
+  <data name="VoiceStylesDelimiter">
+    <value>Разделитель тега стиля</value>
+  </data>
+  <data name="VoiceStylesDelimiterHint">
+    <value>Тег стиля</value>
+  </data>
+  <data name="VoiceStylesExampleFormat">
+    <value>Пример: {0}Шёпотом{0} Привет, мир</value>
+  </data>
+  <data name="VoiceStylesUnsupportedBackend">
+    <value>Этот движок пока не поддерживает динамические стили.</value>
+  </data>
+  <!-- Lexicons -->
+  <data name="LexiconsTitle">
+    <value>Словари произношения</value>
+  </data>
+  <data name="LexiconsCommunityHint">
+    <value>Ищете больше словарей? Загляните в наш список словарей сообщества!</value>
+  </data>
+  <data name="ActionWiki">
+    <value>Wiki</value>
+  </data>
+  <data name="LexiconsOpenRepository">
+    <value>Открыть репозиторий словарей</value>
+  </data>
+  <data name="LexiconsOpenFile">
+    <value>Открыть словарь</value>
+  </data>
+  <data name="FileDialogOpenFile">
+    <value>Открыть файл...</value>
+  </data>
+  <!-- Lexicon Repository -->
+  <data name="LexiconRepositoryTitle">
+    <value>Репозиторий словарей</value>
+  </data>
+  <data name="LexiconRepositoryColumnLexicon">
+    <value>Словарь</value>
+  </data>
+  <data name="LexiconRepositoryColumnStatus">
+    <value>Статус</value>
+  </data>
+  <data name="LexiconRepositoryColumnAuthors">
+    <value>Авторы</value>
+  </data>
+  <data name="LexiconRepositoryStatusHasUpdate">
+    <value>Доступно обновление</value>
+  </data>
+  <data name="LexiconRepositoryStatusInstalled">
+    <value>Установлен</value>
+  </data>
+  <data name="LexiconRepositoryPackageByFormat">
+    <value>{0} от {1}</value>
+  </data>
+  <data name="LexiconRepositoryFiles">
+    <value>Файлы пакета словаря:</value>
+  </data>
+  <data name="LexiconRepositoryFileFormat">
+    <value> - {0}</value>
+  </data>
+  <data name="ActionInstall">
+    <value>Установить</value>
+  </data>
+  <data name="ActionUninstall">
+    <value>Удалить</value>
+  </data>
+  <data name="ActionUpdating">
+    <value>Обновление</value>
+  </data>
+  <data name="ActionUpdate">
+    <value>Обновить</value>
+  </data>
+  <data name="LexiconRepositoryEnabledBackends">
+    <value>Включено для движков:</value>
+  </data>
+  <!-- Shared Backend Settings -->
+  <data name="BackendUngenderedPresets">
+    <value>Пресеты без указания пола</value>
+  </data>
+  <data name="BackendUngenderedHelp">
+    <value>По умолчанию NPC в игре имеют только значения пола 0 и 1 независимо от их канонического пола (или его отсутствия). Поэтому персонажей без указанного пола необходимо перечислить отдельно, чтобы они корректно отображались в игре. Подробнее см. https://github.com/karashiiro/TextToTalk/wiki/Adding-NPCs-to-the-Ungendered-Overrides-List</value>
+  </data>
+  <data name="BackendNoUngenderedPresets">
+    <value>Не выбраны голосовые пресеты без указания пола.</value>
+  </data>
+  <data name="BackendMalePresets">
+    <value>Мужские пресеты</value>
+  </data>
+  <data name="BackendNoMalePresets">
+    <value>Не выбраны мужские голосовые пресеты.</value>
+  </data>
+  <data name="BackendFemalePresets">
+    <value>Женские пресеты</value>
+  </data>
+  <data name="BackendNoFemalePresets">
+    <value>Не выбраны женские голосовые пресеты.</value>
+  </data>
+  <data name="BackendVoiceUnsupported">
+    <value>Голос не поддерживается этим движком</value>
+  </data>
+  <data name="BackendNoVoiceSelected">
+    <value>Голос не выбран</value>
+  </data>
+  <data name="BackendMultiplePresetsHint">
+    <value>Если для одного пола выбрано несколько пресетов, они будут случайным образом назначаться персонажам.</value>
+  </data>
+  <data name="BackendSwitchFailed"><value>Не удалось переключиться на бэкенд {0}.</value></data>
+  <data name="BackendNoPresetsConfigured"><value>У вас не настроены голосовые пресеты.</value></data>
+  <data name="BackendCreatePresetHint"><value>Создайте голосовой пресет в настройках TextToTalk.</value></data>
+
+  <!-- Megaphone -->
+  <data name="MegaphonePort">
+    <value>Порт</value>
+  </data>
+  <data name="MegaphonePortOutOfRange">
+    <value>Порт вне допустимого диапазона [0, 65535]</value>
+  </data>
+  <data name="MegaphonePortInvalid">
+    <value>Не удалось распознать порт.</value>
+  </data>
+  <data name="MegaphoneInstallPrompt">
+    <value>Установить плагин Dalamud Megaphone:</value>
+  </data>
+  <data name="MegaphoneOpenInstallGuide">
+    <value>Открыть руководство по установке</value>
+  </data>
+  <data name="MegaphoneServerStatusFormat">
+    <value>{0} на {1}</value>
+  </data>
+  <data name="MegaphoneServerStarted">
+    <value>Запущен</value>
+  </data>
+  <data name="MegaphoneServerWillStart">
+    <value>Будет запущен</value>
+  </data>
+  <data name="MegaphoneRestartServer">
+    <value>Перезапустить сервер</value>
+  </data>
+  <data name="ChatTypeFreeCompanyMemberLoginNotifications">
+    <value>Уведомления о входе участников свободной компании</value>
+  </data>
+  <data name="ChatTypeDamageDealtByYou">
+    <value>Урон</value>
+  </data>
+  <data name="ChatTypeFailedAttacksOnYou">
+    <value>Промах</value>
+  </data>
+  <data name="ChatTypeActionReadiedByYou">
+    <value>Действие</value>
+  </data>
+  <data name="ChatTypeDetrimentalEffectsInflictedByYou">
+    <value>Отрицательный эффект, наложенный вами</value>
+  </data>
+  <data name="ChatTypeBeneficialEffectOnYouEnded">
+    <value>Снятый положительный эффект</value>
+  </data>
+</root>

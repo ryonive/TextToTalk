@@ -13,6 +13,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Net.Http;
@@ -34,6 +35,7 @@ using TextToTalk.Data.Services;
 using TextToTalk.Events;
 using TextToTalk.Extensions;
 using TextToTalk.GameEnums;
+using TextToTalk.Localization;
 using TextToTalk.Middleware;
 using TextToTalk.Services;
 using TextToTalk.Talk;
@@ -62,6 +64,7 @@ private readonly IDalamudPluginInterface pluginInterface;
         private readonly IChatGui chat;
         private readonly IFramework framework;
         private readonly IClientState clientState;
+        private readonly Localizer localizer;
         private readonly IObjectTable objects;
         private readonly IGameConfig gameConfig;
 
@@ -118,6 +121,8 @@ private readonly IDalamudPluginInterface pluginInterface;
 
             this.pluginInterface = pi;
             this.clientState = clientState;
+            this.localizer = new Localizer(pi.UiLanguage);
+            this.pluginInterface.LanguageChanged += OnDalamudLanguageChanged;
             this.objects = objects;
             this.keys = keyState;
             this.chat = chat;
@@ -163,7 +168,7 @@ private readonly IDalamudPluginInterface pluginInterface;
                     window.Text = result;
                     window.IsOpen = true;
                 });
-            this.configurationWindow = new ConfigurationWindow(this.config, data, this.backendManager,
+            this.configurationWindow = new ConfigurationWindow(this.config, data, this.localizer, this.backendManager,
                 this.playerService, this.npcService, this.voiceUnlockerWindow)
             {
                 IsOpen = InitiallyVisible,
@@ -614,6 +619,7 @@ private readonly IDalamudPluginInterface pluginInterface;
 
         private void UnregisterCallbacks()
         {
+            this.pluginInterface.LanguageChanged -= OnDalamudLanguageChanged;
             this.framework.Update -= CheckKeybindPressed;
             this.framework.Update -= this.notificationService.ProcessNotifications;
 
@@ -621,6 +627,11 @@ private readonly IDalamudPluginInterface pluginInterface;
             this.pluginInterface.UiBuilder.OpenMainUi -= this.configurationWindow.Open;
 
             this.pluginInterface.UiBuilder.Draw -= this.windows.Draw;
+        }
+
+        private void OnDalamudLanguageChanged(string languageCode)
+        {
+            this.localizer.SetUiLanguage(languageCode);
         }
 
         #region IDisposable Support

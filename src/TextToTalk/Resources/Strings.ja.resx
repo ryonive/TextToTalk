@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+
+  <!-- Main Window -->
+  <data name="ConfigurationTitle"><value>TextToTalk設定</value></data>
+  <data name="EnabledSuffix"><value>有効</value></data>
+  <data name="DisabledSuffix"><value>無効</value></data>
+
+  <!-- Main Tabs -->
+  <data name="TabSynthesizerSettings"><value>音声合成設定</value></data>
+  <data name="TabPlayerVoices"><value>プレイヤーボイス</value></data>
+  <data name="TabNpcVoices"><value>NPCボイス</value></data>
+  <data name="TabChannelSettings"><value>チャンネル設定</value></data>
+  <data name="TabTriggersExclusions"><value>トリガー/除外</value></data>
+
+  <!-- Synthesizer Settings -->
+  <data name="SectionKeybinds"><value>キーバインド</value></data>
+  <data name="EnableKeybind"><value>キーバインドを有効にする</value></data>
+  <data name="TtsToggleKeybind"><value>TTS切り替えキーバインド</value></data>
+  <data name="KeyControl"><value>Ctrl</value></data>
+  <data name="KeyShift"><value>Shift</value></data>
+  <data name="KeyAlt"><value>Alt</value></data>
+  <data name="SectionGeneral"><value>一般</value></data>
+  <data name="AudioOutputDevice"><value>音声出力デバイス</value></data>
+  <data name="Volume"><value>音量</value></data>
+  <data name="VolumeHelp"><value>すべてのTTS再生音量を調整します。この値はボイスプリセットの音量に乗算されます。</value></data>
+  <data name="ReadNpcDialogueFromDialogueWindow"><value>会話ウィンドウのNPC会話を読み上げる</value></data>
+  <data name="CancelSpeechOnTextAdvance"><value>新しいテキストが表示されたとき、またはテキストを進めたときに、現在のNPC読み上げを停止する</value></data>
+  <data name="SkipVoicedNpcDialogue"><value>ボイス付きのNPC会話は読み上げない</value></data>
+  <data name="ReadNpcDialogueFromBattleWindow"><value>バトル会話ウィンドウのNPC会話を読み上げる</value></data>
+  <data name="SkipMessagesFromYou"><value>自分のメッセージを読み上げない</value></data>
+  <data name="OnlyMessagesFromYou"><value>自分のメッセージのみ読み上げる</value></data>
+  <data name="EnableNameWithSay"><value>発言時に「Xが言う:」を読み上げる</value></data>
+  <data name="NameNpcWithSay"><value>NPC会話でも「NPC名が言う:」を読み上げる</value></data>
+  <data name="SayPlayerWorldName"><value>プレイヤーのワールド名を読み上げる</value></data>
+  <data name="DisallowMultipleSay"><value>「キャラクター名が言う:」は、そのキャラクターの最初の発言時のみ読み上げる</value></data>
+  <data name="SayPartialName"><value>名または姓のみ読み上げる</value></data>
+  <data name="OnlySayForename"><value>名のみ読み上げる</value></data>
+  <data name="OnlySaySurname"><value>姓のみ読み上げる</value></data>
+  <data name="LimitPlayerTtsFrequency"><value>プレイヤーTTSの頻度を制限する</value></data>
+  <data name="MessagesPerSecondFormat"><value>%.3f メッセージ/秒</value></data>
+  <data name="SectionVoices"><value>ボイス</value></data>
+  <data name="VoiceBackend"><value>音声バックエンド</value></data>
+  <data name="SectionExperimental"><value>試験的機能</value></data>
+  <data name="RemoveStutter"><value>NPC会話のどもりを除去する（デフォルト: ON）</value></data>
+  <data name="RemoveStutterHelp"><value>「H-hello, nice to m-meet you...」のようなNPC会話の「どもり」を除去します。</value></data>
+
+  <!-- Player Voices -->
+  <data name="PlayerVoicesHint"><value>下のオプションで、プレイヤーごとに特定のボイスプリセットを設定します。</value></data>
+  <data name="UsePlayerVoicePresets"><value>プレイヤーのボイスプリセットを使用する</value></data>
+  <data name="TableName"><value>名前</value></data>
+  <data name="TableWorld"><value>ワールド</value></data>
+  <data name="TablePreset"><value>プリセット</value></data>
+  <data name="ActionDelete"><value>削除</value></data>
+  <data name="PlayerName"><value>プレイヤー名</value></data>
+  <data name="PlayerWorld"><value>プレイヤーのワールド</value></data>
+  <data name="ActionAddPlayer"><value>プレイヤーを追加</value></data>
+  <data name="PlayerAddFailedDuplicate"><value>プレイヤーを追加できませんでした。重複していませんか？</value></data>
+
+  <!-- NPC Voices -->
+  <data name="NpcVoicesHint"><value>下のオプションで、NPCごとに特定のボイスプリセットを設定します。</value></data>
+  <data name="UseNpcVoicePresets"><value>NPCのボイスプリセットを使用する</value></data>
+  <data name="NpcName"><value>NPC名</value></data>
+  <data name="ActionAddNpc"><value>NPCを追加</value></data>
+  <data name="NpcAddFailedDuplicate"><value>NPCを追加できませんでした。重複していませんか？</value></data>
+
+  <!-- Channel Settings -->
+  <data name="ChannelPreset"><value>プリセット</value></data>
+  <data name="ActionNewPreset"><value>新規プリセット</value></data>
+  <data name="ActionEdit"><value>編集</value></data>
+  <data name="RecommendedForTriggerUse"><value>トリガー使用時に推奨</value></data>
+  <data name="EnableAllIncludingUndocumented"><value>すべて有効にする（未文書化の項目を含む）</value></data>
+  <data name="ChatTypeDebug"><value>デバッグ</value></data>
+  <data name="ChatTypeCrossParty"><value>クロスワールドパーティ</value></data>
+  <data name="ChatTypeEnemyDefeatedByYou"><value>自分が倒した敵</value></data>
+  <data name="ChatTypeOrchestrion"><value>オーケストリオン</value></data>
+  <data name="ChatTypeTellIncoming"><value>Tell（受信）</value></data>
+  <data name="ChatTypeTellOutgoing"><value>Tell（送信）</value></data>
+
+  <!-- Triggers and Exclusions -->
+  <data name="EnableAllChatTypesIncludingUndocumented"><value>すべてのチャットタイプを有効にする（未文書化のタイプを含む）</value></data>
+  <data name="TriggersHeading"><value>トリガー</value></data>
+  <data name="ExclusionsHeading"><value>除外</value></data>
+  <data name="TriggerInputHintFormat"><value>{0}をここに入力...</value></data>
+  <data name="TriggersRegex"><value>正規表現</value></data>
+  <data name="ActionRemove"><value>削除</value></data>
+  <data name="ActionAddFormat"><value>{0}を追加</value></data>
+
+  <!-- Channel Preset Window -->
+  <data name="ChannelPresetWindowTitle"><value>プリセット</value></data>
+  <data name="ChannelPresetName"><value>名前</value></data>
+  <data name="ChannelPresetEnableKeybind"><value>プリセット有効化キーバインド</value></data>
+  <data name="ActionClose"><value>閉じる</value></data>
+
+  <!-- Voice Unlocker -->
+  <data name="VoiceUnlockerTitle"><value>VoiceUnlocker</value></data>
+  <data name="VoiceUnlockerManualTutorial"><value>手動設定チュートリアル</value></data>
+  <data name="VoiceUnlockerEnableAll"><value>すべてのシステム音声を有効にする</value></data>
+  <data name="VoiceUnlockerWindows10Warning"><value>この変更はWindows 10でのみテストされています。</value></data>
+  <data name="VoiceUnlockerManualWarningFormat"><value>この機能は、システムレジストリのセクション間でキーをコピーすることで、すべてのシステムTTS音声を有効にします。この変更は自動では元に戻せない場合があります。手動で変更する場合は「{0}」ボタンをクリックしてください。</value></data>
+  <data name="VoiceUnlockerAutomaticWarningFormat"><value>自動設定を続行する場合は「{0}」ボタンをクリックしてください。以前に行ったレジストリ変更に起因するシステムの不安定性は考慮されず、そのようなケースはサポート対象外です。</value></data>
+  <data name="VoiceUnlockerSuccess"><value>レジストリの変更に成功しました。ゲームを再起動すると変更が適用されます。</value></data>
+  <data name="VoiceUnlockerStartFailed"><value>VoiceUnlockerを起動できませんでした。レジストリは変更されていません。</value></data>
+  <data name="VoiceUnlockerAdminRequired"><value>管理者権限が要求されます</value></data>
+  <data name="VoiceUnlockerResultTitle"><value>VoiceUnlockerの結果</value></data>
+
+  <!-- Voice Styles -->
+  <data name="VoiceStylesTitle"><value>ボイススタイル</value></data>
+  <data name="VoiceStylesConfigureAdHocTags"><value>アドホックスタイルタグを設定</value></data>
+  <data name="VoiceStylesEnableAdHocTags"><value>アドホックスタイルタグを有効にする</value></data>
+  <data name="VoiceStylesAdHocTagsHelp"><value>チェックすると、スタイルタグを含むチャットメッセージはそのスタイルで音声合成されます。ボイスプリセットで設定されたスタイルより優先されます。</value></data>
+  <data name="VoiceStylesDelimiter"><value>スタイルタグの区切り文字</value></data>
+  <data name="VoiceStylesDelimiterHint"><value>スタイルタグ</value></data>
+  <data name="VoiceStylesExampleFormat"><value>例: {0}Whispering{0} Hello World</value></data>
+  <data name="VoiceStylesUnsupportedBackend"><value>このバックエンドはまだ動的スタイルに対応していません。</value></data>
+
+  <!-- Lexicons -->
+  <data name="LexiconsTitle"><value>発音辞書</value></data>
+  <data name="LexiconsCommunityHint"><value>発音辞書をもっとお探しですか？コミュニティの発音辞書一覧をご覧ください！</value></data>
+  <data name="ActionWiki"><value>Wiki</value></data>
+  <data name="LexiconsOpenRepository"><value>発音辞書リポジトリを開く</value></data>
+  <data name="LexiconsOpenFile"><value>発音辞書を開く</value></data>
+  <data name="FileDialogOpenFile"><value>ファイルを開く...</value></data>
+
+  <!-- Lexicon Repository -->
+  <data name="LexiconRepositoryTitle"><value>発音辞書リポジトリ</value></data>
+  <data name="LexiconRepositoryColumnLexicon"><value>発音辞書</value></data>
+  <data name="LexiconRepositoryColumnStatus"><value>状態</value></data>
+  <data name="LexiconRepositoryColumnAuthors"><value>作者</value></data>
+  <data name="LexiconRepositoryStatusHasUpdate"><value>更新あり</value></data>
+  <data name="LexiconRepositoryStatusInstalled"><value>インストール済み</value></data>
+  <data name="LexiconRepositoryPackageByFormat"><value>{0}（{1} 作）</value></data>
+  <data name="LexiconRepositoryFiles"><value>発音辞書パッケージのファイル:</value></data>
+  <data name="LexiconRepositoryFileFormat"><value> - {0}</value></data>
+  <data name="ActionInstall"><value>インストール</value></data>
+  <data name="ActionUninstall"><value>アンインストール</value></data>
+  <data name="ActionUpdating"><value>更新中</value></data>
+  <data name="ActionUpdate"><value>更新</value></data>
+  <data name="LexiconRepositoryEnabledBackends"><value>有効なバックエンド:</value></data>
+
+  <!-- Shared Backend Settings -->
+  <data name="BackendUngenderedPresets"><value>性別なしプリセット</value></data>
+  <data name="BackendUngenderedHelp"><value>ゲーム内のNPCは、公式設定上の性別（または性別が設定されていないこと）にかかわらず、デフォルトでは性別値が0か1のいずれかしかありません。そのため、性別のないキャラクターをゲーム内で正しく反映するには、こちらで個別に指定する必要があります。詳しくは https://github.com/karashiiro/TextToTalk/wiki/Adding-NPCs-to-the-Ungendered-Overrides-List を参照してください。</value></data>
+  <data name="BackendNoUngenderedPresets"><value>性別なしのボイスプリセットが選択されていません。</value></data>
+  <data name="BackendMalePresets"><value>男性用プリセット</value></data>
+  <data name="BackendNoMalePresets"><value>男性用のボイスプリセットが選択されていません。</value></data>
+  <data name="BackendFemalePresets"><value>女性用プリセット</value></data>
+  <data name="BackendNoFemalePresets"><value>女性用のボイスプリセットが選択されていません。</value></data>
+  <data name="BackendVoiceUnsupported"><value>このエンジンはこのボイスに対応していません</value></data>
+  <data name="BackendNoVoiceSelected"><value>ボイスが選択されていません</value></data>
+  <data name="BackendMultiplePresetsHint"><value>性別ごとに複数のプリセットを選択した場合、キャラクターにランダムで割り当てられます。</value></data>
+
+  <data name="BackendSwitchFailed"><value>{0}バックエンドへの切り替えに失敗しました。</value></data>
+  <data name="BackendNoPresetsConfigured"><value>音声プリセットが設定されていません。</value></data>
+  <data name="BackendCreatePresetHint"><value>TextToTalkの設定で音声プリセットを作成してください。</value></data>
+
+  <!-- Megaphone -->
+  <data name="MegaphonePort"><value>ポート</value></data>
+  <data name="MegaphonePortOutOfRange"><value>ポートが範囲外です [0, 65535]</value></data>
+  <data name="MegaphonePortInvalid"><value>ポートを解析できません。</value></data>
+  <data name="MegaphoneInstallPrompt"><value>Megaphone Dalamudプラグインをインストール:</value></data>
+  <data name="MegaphoneOpenInstallGuide"><value>インストールガイドを開く</value></data>
+  <data name="MegaphoneServerStatusFormat"><value>{1} で{0}</value></data>
+  <data name="MegaphoneServerStarted"><value>起動済み</value></data>
+  <data name="MegaphoneServerWillStart"><value>起動予定</value></data>
+  <data name="MegaphoneRestartServer"><value>サーバーを再起動</value></data>
+</root>

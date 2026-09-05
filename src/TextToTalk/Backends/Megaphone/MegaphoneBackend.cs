@@ -6,6 +6,7 @@ using System.Numerics;
 using Dalamud.Interface.Utility.Raii;
 using TextToTalk.Backends.Websocket;
 using TextToTalk.Events;
+using TextToTalk.Resources;
 using TextToTalk.Services;
 using TextToTalk.UI;
 
@@ -132,13 +133,13 @@ public class MegaphoneBackend : VoiceBackend
         var port = this.config.MegaphonePort;
         var portStr = port.ToString();
 
-        var didUpdate = ImGui.InputText("Port", ref portStr, 5, ImGuiInputTextFlags.CharsDecimal);
+        var didUpdate = ImGui.InputText(Strings.Get("MegaphonePort"), ref portStr, 5, ImGuiInputTextFlags.CharsDecimal);
 
         if (int.TryParse(portStr, out var newPort))
         {
             if (!IsValidPort(newPort))
             {
-                ImGui.TextColored(Red, "Port is out of range [0, 65535]");
+                ImGui.TextColored(Red, Strings.Get("MegaphonePortOutOfRange"));
             }
             else if (didUpdate)
             {
@@ -149,14 +150,14 @@ public class MegaphoneBackend : VoiceBackend
         }
         else
         {
-            ImGui.TextColored(Red, "Unable to parse port.");
+            ImGui.TextColored(Red, Strings.Get("MegaphonePortInvalid"));
         }
     }
 
     private void DrawInstallLink()
     {
-        ImGui.TextColored(Hint, "Install the Megaphone Dalamud plugin:");
-        if (ImGui.Button($"Open Install Guide##{MemoizedId.Create()}"))
+        ImGui.TextColored(Hint, Strings.Get("MegaphoneInstallPrompt"));
+        if (ImGui.Button($"{Strings.Get("MegaphoneOpenInstallGuide")}##{MemoizedId.Create()}"))
         {
             Dalamud.Utility.Util.OpenLink(InstallUrl);
         }
@@ -165,7 +166,10 @@ public class MegaphoneBackend : VoiceBackend
     private void DrawServerStatus()
     {
         var fullServiceUrl = this.wsServer.ServiceUrl + this.wsServer.ServicePath;
-        ImGui.TextColored(Hint, $"{(this.wsServer.Active ? "Started" : "Will start")} on {fullServiceUrl}");
+        var status = this.wsServer.Active
+            ? Strings.Get("MegaphoneServerStarted")
+            : Strings.Get("MegaphoneServerWillStart");
+        ImGui.TextColored(Hint, string.Format(Strings.Get("MegaphoneServerStatusFormat"), status, fullServiceUrl));
     }
 
     private void DrawServerRestart()
@@ -173,7 +177,7 @@ public class MegaphoneBackend : VoiceBackend
         using var bcAzure = ImRaii.PushColor(ImGuiCol.Button, Azure, this.dirtyConfig);
         using var bcAzureHovered = ImRaii.PushColor(ImGuiCol.ButtonHovered, AzureHovered, this.dirtyConfig);
         using var bcAzureActive = ImRaii.PushColor(ImGuiCol.ButtonActive, AzureActive, this.dirtyConfig);
-        if (ImGui.Button($"Restart server##{MemoizedId.Create()}"))
+        if (ImGui.Button($"{Strings.Get("MegaphoneRestartServer")}##{MemoizedId.Create()}"))
         {
             ImCatchServerRestart(() =>
             {
