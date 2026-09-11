@@ -531,6 +531,54 @@ public class SystemSoundQueueTests : IDisposable
     }
 
     [Fact]
+    public void CancelDuringSynthesis_DoesNotAdvanceQueueUntilSynthesisReturns()
+    {
+        var firstStarted = new ManualResetEventSlim();
+        var releaseFirst = new ManualResetEventSlim();
+        var secondStarted = new ManualResetEventSlim();
+        var invocation = 0;
+
+        this.mockSynth.Setup(s => s.SpeakSsml(It.IsAny<string>()))
+            .Callback(() =>
+            {
+                if (Interlocked.Increment(ref invocation) == 1)
+                {
+                    firstStarted.Set();
+                    releaseFirst.Wait();
+                }
+                else
+                {
+                    secondStarted.Set();
+                }
+            });
+
+        var queue = CreateQueue();
+        var preset = CreatePreset();
+        queue.EnqueueSound(preset, TextSource.AddonTalk, "First");
+        Assert.True(firstStarted.Wait(TimeSpan.FromSeconds(5)));
+
+        queue.EnqueueSound(preset, TextSource.Chat, "Second");
+        queue.CancelFromSource(TextSource.AddonTalk);
+
+        // NatualVoicesSAPIAdapter takes a bit of time to return from SpeakSsml after
+        // we call SetOutputToNull.
+        // The canceled item must remain current during that interval, otherwise a stale
+        // completion signal can run the queue ahead and cause a draining delay.
+        try
+        {
+            Thread.Sleep(200);
+            Assert.Equal(TextSource.AddonTalk, queue.GetCurrentlySpokenTextSource());
+            Assert.False(secondStarted.IsSet);
+        }
+        finally
+        {
+            releaseFirst.Set();
+        }
+
+        Assert.True(secondStarted.Wait(TimeSpan.FromSeconds(5)));
+    }
+
+    [Fact]
     public void Dispose_DuringBlockedSynthesis_CompletesCleanly()
     {
         var synthesisStarted = new ManualResetEventSlim();

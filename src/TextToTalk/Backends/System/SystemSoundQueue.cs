@@ -1,30 +1,20 @@
 ﻿using R3;
 using System;
 using System.IO;
-using System.Threading;
-using System.Threading.Tasks;
 using TextToTalk.Lexicons;
 
 namespace TextToTalk.Backends.System
 {
     public class SystemSoundQueue : SoundQueue<SystemSoundQueueItem>
     {
-        private MemoryStream stream;
         internal ISpeechSynthesizer speechSynthesizer;
         private readonly Func<ISpeechSynthesizer>? speechSynthesizerFactory;
         private readonly LexiconManager lexiconManager;
         private readonly StreamSoundQueue streamSoundQueue;
-        private readonly SystemBackend backend;
-        private readonly PluginConfiguration config;
-        private int soundLock;
-        private readonly SemaphoreSlim deviceLock = new SemaphoreSlim(1, 1);
-        private readonly ManualResetEventSlim synthesisCompleted = new ManualResetEventSlim(true);
         internal int consecutiveFailures;
 
         public Observable<SelectVoiceFailedException> SelectVoiceFailed => selectVoiceFailed;
         private readonly Subject<SelectVoiceFailedException> selectVoiceFailed;
-        private bool isSynthesizing = false;
-
         public SystemSoundQueue(LexiconManager lexiconManager, PluginConfiguration config, ISpeechSynthesizer speechSynthesizer, Func<ISpeechSynthesizer>? synthesizerFactory = null)
             : this(lexiconManager, config, speechSynthesizer, new StreamSoundQueue(config), synthesizerFactory)
         {
@@ -49,7 +39,7 @@ namespace TextToTalk.Backends.System
             });
         }
 
-        protected override async void OnSoundLoop(SystemSoundQueueItem nextItem)
+        protected override void OnSoundLoop(SystemSoundQueueItem nextItem)
         {
             if (nextItem.Preset is not SystemVoicePreset systemVoicePreset)
             {
@@ -70,23 +60,15 @@ namespace TextToTalk.Backends.System
                 langCode: this.speechSynthesizer.VoiceCultureIetfLanguageTag);
             DetailedLog.Verbose(ssml);
 
-            this.synthesisCompleted.Reset();
-
             MemoryStream? synthesisStream = null;
             var synthesisSucceeded = false;
             try
             {
-                isSynthesizing = true;
-
-                await deviceLock.WaitAsync();
-
-                this.stream = new MemoryStream();
-                this.speechSynthesizer.SetOutputToWaveStream(this.stream);
-
-                await Task.Run(() => this.speechSynthesizer.SpeakSsml(ssml));
+                synthesisStream = new MemoryStream();
+                this.speechSynthesizer.SetOutputToWaveStream(synthesisStream);
+                this.speechSynthesizer.SpeakSsml(ssml);
 
                 synthesisSucceeded = true;
-                synthesisStream = this.stream;
             }
             catch (OperationCanceledException)
             {
@@ -97,24 +79,16 @@ namespace TextToTalk.Backends.System
                 DetailedLog.Error(e, "TTS playback failed: {0}", ssml);
                 TryRecoverSynthesizer();
             }
-            finally
-            {
-                isSynthesizing = false;
-                this.synthesisCompleted.Set();
-                deviceLock.Release();
-            }
-
             if (synthesisSucceeded && synthesisStream != null)
             {
                 this.consecutiveFailures = 0;
                 synthesisStream.Seek(0, SeekOrigin.Begin);
                 this.streamSoundQueue.EnqueueSound(synthesisStream, nextItem.Source, StreamFormat.Wave, 1f);
             }
-        }
-
-        protected override void WaitForSoundLoopComplete()
-        {
-            this.synthesisCompleted.Wait();
+            else
+            {
+                synthesisStream?.Dispose();
+            }
         }
 
         public override void CancelAllSounds()
@@ -132,7 +106,7 @@ namespace TextToTalk.Backends.System
 
         protected override void OnSoundCancelled()
         {
-            try 
+            try
             {
                 this.speechSynthesizer.SetOutputToNull();
             }
@@ -143,13 +117,6 @@ namespace TextToTalk.Backends.System
             catch (Exception e)
             {
                 DetailedLog.Error(e, "Failed to set speech synthesizer output to null during cancellation.");
-            }
-            finally
-            {
-                // Unblock the sound thread's WaitForSoundLoopComplete so that
-                // disposal (which calls CancelAllSounds → OnSoundCancelled) can
-                // complete without hanging.
-                this.synthesisCompleted.Set();
             }
         }
 
@@ -180,12 +147,13 @@ namespace TextToTalk.Backends.System
 
         protected override void Dispose(bool disposing)
         {
+            base.Dispose(disposing);
+
             if (disposing)
             {
                 this.speechSynthesizer.Dispose();
+                this.streamSoundQueue.Dispose();
             }
-
-            base.Dispose(disposing);
         }
     }
 }
